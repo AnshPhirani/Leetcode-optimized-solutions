@@ -7,11 +7,12 @@ class Solution {
         
         for(int v : adj.get(u)){
             if(v == parent) continue;
-            int curTime = dfs(v, u);
-            totalTime += curTime;
+            int childTime = dfs(v, u);
+            if(hasApple.get(v) || childTime > 0)
+                totalTime += childTime + 2;
         }
         
-        return (hasApple.get(u) || totalTime > 0) ? totalTime+2 : 0;
+        return totalTime;
     }
     
     public int minTime(int n, int[][] edges,  List<Boolean> hasApple) {
@@ -22,9 +23,8 @@ class Solution {
             adj.get(edge[0]).add(edge[1]);
             adj.get(edge[1]).add(edge[0]);
         }
-        
-        int totalTime = dfs(0, -1);
-        if(totalTime == 0) return 0;
-        else return totalTime-2;
+         
+        return dfs(0, -1);
+   
     }
 }
