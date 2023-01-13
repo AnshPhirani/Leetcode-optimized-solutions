@@ -10,7 +10,6 @@ class Solution {
         int longestPath1 = 0, longestPath2 = 0;
         
         for(int v : adj[u]){
-            if(v == parent) continue;
             
             char curChildChar = s.charAt(v);
             int curChildPath = dfs(v, u);
@@ -38,7 +37,6 @@ class Solution {
         
         for(int i = 0; i < n; i++) adj[i] = new ArrayList<>();
         for(int i = 1; i < n; i++){
-            adj[i].add(parent[i]);
             adj[parent[i]].add(i);
         }
         
