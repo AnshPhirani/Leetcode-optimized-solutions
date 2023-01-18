@@ -13,25 +13,27 @@ class Solution {
     
     public int maxSubarraySumCircular(int[] nums) {
         int n = nums.length;
-        int maxMiddleSum = kadaneAlgo(nums, n);
         
+        int totalSum = 0;
         
-        int[] maxSuffixSum = new int[n];
-        maxSuffixSum[n-1] = Math.max(0, nums[n-1]);
-        int suffixSum = nums[n-1];
-        for(int i = n-2; i >= 0; i--){
-            suffixSum += nums[i];
-            maxSuffixSum[i] = Math.max(maxSuffixSum[i+1], suffixSum);
+        int maxSum = Integer.MIN_VALUE;
+        int curMax = 0;
+        int minSum = Integer.MAX_VALUE;
+        int curMin = 0;
+        
+        for(int i = 0; i < n; i++){
+            curMax += nums[i];
+            maxSum = Math.max(maxSum, curMax);
+            if(curMax < 0) curMax = 0;
+            
+            curMin += nums[i];
+            minSum = Math.min(minSum, curMin);
+            if(curMin > 0) curMin = 0;
+            
+            totalSum += nums[i];
         }
         
-        int maxJoiningSum = Integer.MIN_VALUE;
-        int prefixSum = nums[0];
-        for(int i = 1; i < n; i++){
-            maxJoiningSum = Math.max(maxJoiningSum, prefixSum + maxSuffixSum[i]);
-            prefixSum += nums[i]; 
-        }
-        
-        return Math.max(maxMiddleSum, maxJoiningSum);
+        return minSum == totalSum ? maxSum : Math.max(maxSum, totalSum - minSum);
         
     }
 }
