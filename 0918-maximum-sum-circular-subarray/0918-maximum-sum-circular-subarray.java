@@ -14,26 +14,17 @@ class Solution {
     public int maxSubarraySumCircular(int[] nums) {
         int n = nums.length;
         
+        int maxSubarraySum = kadaneAlgo(nums, n);
+        
         int totalSum = 0;
-        
-        int maxSum = Integer.MIN_VALUE;
-        int curMax = 0;
-        int minSum = Integer.MAX_VALUE;
-        int curMin = 0;
-        
         for(int i = 0; i < n; i++){
-            curMax += nums[i];
-            maxSum = Math.max(maxSum, curMax);
-            if(curMax < 0) curMax = 0;
-            
-            curMin += nums[i];
-            minSum = Math.min(minSum, curMin);
-            if(curMin > 0) curMin = 0;
-            
             totalSum += nums[i];
+            nums[i] *= -1;
         }
         
-        return minSum == totalSum ? maxSum : Math.max(maxSum, totalSum - minSum);
+        int minSubarraySum = kadaneAlgo(nums, n);
+        
+        return totalSum == -minSubarraySum ? maxSubarraySum : Math.max(maxSubarraySum, totalSum + minSubarraySum);
         
     }
 }
