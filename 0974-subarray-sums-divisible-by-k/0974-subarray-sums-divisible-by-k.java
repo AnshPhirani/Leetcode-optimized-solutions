@@ -13,9 +13,6 @@ class Solution {
             if(freqMap.containsKey(prefixSum)){
                 res += freqMap.get(prefixSum);
             }
-            if(freqMap.containsKey(prefixSum-k)){
-                res += freqMap.get(prefixSum - k);
-            }
             
             freqMap.put(prefixSum, freqMap.getOrDefault(prefixSum, 0) + 1);
         }
