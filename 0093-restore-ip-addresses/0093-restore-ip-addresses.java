@@ -33,8 +33,10 @@ class Solution {
         
     }
     
-    public List<String> restoreIpAddresses(String s) {
+    public List<String> restoreIpAddresses(String s) {        
         res = new ArrayList<>();
+        if(s.length() > 12) return res; // not possible
+        
         helper(0, s, "", 0);
         return res;
     }
