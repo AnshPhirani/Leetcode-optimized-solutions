@@ -6,7 +6,9 @@ class Solution {
             if(dots == 4) res.add(curIp.substring(0,curIp.length()-1));
             return;
         }
-        // System.out.println(curIp);
+        
+        if(dots >= 4) return;
+
         
         int n = s.length();
         
