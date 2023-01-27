@@ -5,6 +5,7 @@ class Pair{
         this.node = node;
         this.prob = prob;
     }
+    
 }
 
 class Solution {
@@ -18,24 +19,25 @@ class Solution {
         }
         
         double[] probability = new double[n];
-        Arrays.fill(probability, 0);
-        Queue<Pair> que = new LinkedList<>();
-        que.add(new Pair(start, 1.0));
+        Arrays.fill(probability, -1);
+        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> {
+            return (b.prob > a.prob) ? 1 : (b.prob < a.prob) ? -1 : 0;
+        });
+        pq.add(new Pair(start, 1.0));
         
-        while(!que.isEmpty()){
-            Pair cur = que.poll();
+        while(!pq.isEmpty()){
+            Pair cur = pq.poll();
+            if(probability[cur.node] != -1) continue;
+            probability[cur.node] = cur.prob;
             
             for(Pair neigh : adj.get(cur.node)){
                 double newProb = cur.prob * neigh.prob;
-                if(newProb > probability[neigh.node]){
-                    probability[neigh.node] = newProb;
-                    que.add(new Pair(neigh.node, newProb));
-                }
+                pq.add(new Pair(neigh.node, newProb));
             }
             
         }
         
-        return probability[end];
+        return probability[end] != -1 ? probability[end] : 0;
         
         
     }
