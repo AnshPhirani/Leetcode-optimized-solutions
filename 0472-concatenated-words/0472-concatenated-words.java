@@ -1,11 +1,15 @@
 class Solution {
     
     Set<String> words;
-    Set<String> res;
+    List<String> res;
+    boolean isCancatenatedWord = false; // pruning to prevent repeated word to push into resulting list
     
     private void dfs(int start, String word){
+        if(isCancatenatedWord) return;
+        
         if(start == word.length()){
             res.add(word);
+            isCancatenatedWord = true;
             return;
         }
         
@@ -20,14 +24,15 @@ class Solution {
     
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         this.words = new HashSet<>(Arrays.asList(words));
-        this.res = new HashSet<>();
+        this.res = new ArrayList<>();
         
         for(String word : words){
             this.words.remove(word);
+            this.isCancatenatedWord = false;
             dfs(0, word);
             this.words.add(word);
         }
         
-        return new ArrayList<>(res);
+        return res;
     }
 }
