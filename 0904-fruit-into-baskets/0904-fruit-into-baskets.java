@@ -1,42 +1,20 @@
 class Solution {
     public int totalFruit(int[] fruits) {
-        int firstType = -1, secondType = -1;
-        int firstCount = 0, secondCount = 0;
+        Map<Integer, Integer> freqMap = new HashMap<>();
         int maxCount = 0;
+        int start = 0, end = 0;
         
-        int start = 0;
-        for(int end = 0; end < fruits.length; end++){
-            while(fruits[end] != firstType && fruits[end] != secondType && firstType != -1 && secondType != -1){
-                if(fruits[start] == firstType){
-                    firstCount--;
-                    if(firstCount == 0){
-                        firstType = fruits[end];
-                        break;
-                    }
-                }
-                
-                if(fruits[start] == secondType){
-                    secondCount--;
-                    if(secondCount == 0){
-                        secondType = fruits[end];
-                        break;
-                    }
-                }
+        while(end < fruits.length){
+            int curFruitType = fruits[end];
+            freqMap.put(curFruitType, freqMap.getOrDefault(curFruitType, 0) + 1);
+            while(freqMap.size() > 2){
+                freqMap.put(fruits[start], freqMap.get(fruits[start])-1);
+                if(freqMap.get(fruits[start]) == 0) freqMap.remove(fruits[start]);
                 start++;
             }
             
-            if(firstType == -1) firstType = fruits[end];
-            else if(fruits[end] != firstType && secondType == -1) secondType = fruits[end];
-            
-            if(fruits[end] == firstType){
-                firstCount++;
-            }
-            else if(fruits[end] == secondType){
-                secondCount++;
-            }
-          
-      
-            maxCount = Math.max(maxCount, firstCount+secondCount);
+            maxCount = Math.max(maxCount, end-start+1);
+            end++;
         }
         
         return maxCount;
