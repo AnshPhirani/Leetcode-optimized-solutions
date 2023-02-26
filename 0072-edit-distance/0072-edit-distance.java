@@ -1,26 +1,31 @@
 class Solution {
-    
-    Integer[][] memo;
-    
-    private int helper(int idx1, int idx2, String word1, String word2){
-        if(idx1 == word1.length()) return word2.length()-idx2;
-        if(idx2 == word2.length()) return word1.length()-idx1;
+
+    public int minDistance(String word1, String word2) {
+        int n = word1.length(), m = word2.length();
         
-        if(memo[idx1][idx2] != null) return memo[idx1][idx2];
+        int[][] dp = new int[n+1][m+1];
         
-        if(word1.charAt(idx1) == word2.charAt(idx2)){
-            return helper(idx1+1, idx2+1, word1, word2);
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = i;
+        }
+        for(int i = 0; i <= m; i++){
+            dp[0][i] = i;
         }
         
-        int insert = 1 + helper(idx1, idx2+1, word1, word2);
-        int delete = 1 + helper(idx1+1, idx2, word1, word2);
-        int replace = 1 + helper(idx1+1, idx2+1, word1, word2);
-        return memo[idx1][idx2] = Math.min(insert, Math.min(delete, replace));
-    }
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= m; j++){
+                if(word1.charAt(i-1) == word2.charAt(j-1)){
+                    dp[i][j] = dp[i-1][j-1];
+                }
+                else{
+                    int replace = 1 + dp[i-1][j-1];
+                    int insert = 1 + dp[i][j-1];
+                    int delete = 1 + dp[i-1][j];
+                    dp[i][j] = Math.min(replace, Math.min(insert, delete));
+                }
+            }
+        }
     
-    public int minDistance(String word1, String word2) {
-        this.memo = new Integer[word1.length()][word2.length()];
-    
-        return helper(0, 0, word1, word2);
+        return dp[n][m];
     }
 }
