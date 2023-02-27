@@ -39,34 +39,29 @@ class Node {
 */
 
 class Solution {
-    
-    private int gridSum(int topLeftR, int topLeftC, int bottomRightR, int bottomRightC, int[][] grid){
-        int sum = 0;
-        for(int i = topLeftR; i <= bottomRightR; i++){
-            for(int j = topLeftC; j <= bottomRightC; j++){
-                sum += grid[i][j];
-            }
-        }
-        return sum;
-    }
+
     
     private Node helper(int topLeftR, int topLeftC, int bottomRightR, int bottomRightC, int[][] grid){
         
-        int gridSum = gridSum(topLeftR, topLeftC, bottomRightR, bottomRightC, grid);
-  
-        if(gridSum == 0) return new Node(false, true);
-        if(gridSum == (bottomRightR-topLeftR+1)*(bottomRightC-topLeftC+1)) return new Node(true, true);
+        if(topLeftR == bottomRightR && topLeftC == bottomRightC){
+            return new Node(grid[topLeftR][topLeftC] == 1, true);
+        }
         
         int midR = (topLeftR + bottomRightR)/2;
         int midC = (topLeftC + bottomRightC)/2;
+
+        Node topLeft = helper(topLeftR, topLeftC, midR, midC, grid);
+        Node topRight = helper(topLeftR, midC+1, midR, bottomRightC, grid);
+        Node bottomLeft = helper(midR+1, topLeftC, bottomRightR, midC, grid);
+        Node bottomRight = helper(midR+1, midC+1, bottomRightR, bottomRightC, grid);
         
-        Node curParent = new Node(false, false);
-        curParent.topLeft = helper(topLeftR, topLeftC, midR, midC, grid);
-        curParent.topRight = helper(topLeftR, midC+1, midR, bottomRightC, grid);
-        curParent.bottomLeft = helper(midR+1, topLeftC, bottomRightR, midC, grid);
-        curParent.bottomRight = helper(midR+1, midC+1, bottomRightR, bottomRightC, grid);
+        boolean allLeaf = false;
+        boolean allSameValue = false;
+        if(topLeft.isLeaf && topRight.isLeaf && bottomLeft.isLeaf && bottomRight.isLeaf && topLeft.val == topRight.val && topLeft.val == bottomLeft.val && topLeft.val == bottomRight.val){
+            return new Node(topLeft.val, true);
+        }
         
-        return curParent;
+        return new Node(false, false, topLeft, topRight, bottomLeft, bottomRight);
     }
     
     
