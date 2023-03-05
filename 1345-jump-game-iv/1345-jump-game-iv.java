@@ -11,7 +11,6 @@ class Solution {
         
         
         boolean[] visited = new boolean[n];
-        Set<Integer> visitedValues = new HashSet<>();
         Queue<Integer> que = new LinkedList<>();
         
         que.add(0);
@@ -31,14 +30,14 @@ class Solution {
                     que.add(curPos+1);
                     visited[curPos+1] = true;
                 }
-                if(visitedValues.contains(arr[curPos])) continue;
+  
                 for(int sameValuePos : map.get(arr[curPos])){
                     if(!visited[sameValuePos]) {
                         que.add(sameValuePos);
                         visited[sameValuePos] = true;
                     }
                 }
-                visitedValues.add(arr[curPos]);
+                map.get(arr[curPos]).clear(); //  stop repeative work
             }
             steps++;
         }
