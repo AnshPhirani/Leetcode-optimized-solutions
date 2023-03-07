@@ -11,13 +11,13 @@ class Solution {
     
     public long minimumTime(int[] time, int totalTrips) {
         
-        long maxTime = 0;
+        long minTime = Integer.MAX_VALUE;
         for(int t : time){
-            maxTime = Math.max(maxTime, t);
+            minTime = Math.min(minTime, t);
         }
         
-        long low = 0;
-        long high = maxTime*totalTrips;
+        long low = minTime;
+        long high = minTime*totalTrips;
         while(low < high){
             long mid = low  + (high-low)/2;
             if(timeEnough(time, mid, totalTrips)){
