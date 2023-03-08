@@ -1,35 +1,47 @@
 class Solution {
-    
-    // maximum palindrome length center between left and right
-    private int maxPalindromeLen(String str, int left, int right){
-        while(left >= 0 && right < str.length() && str.charAt(left) == str.charAt(right)){
-            left--;
-            right++;
+    public String longestPalindrome(String s) {
+        
+        StringBuilder sb = new StringBuilder();
+        sb.append('#');
+        for(char ch : s.toCharArray()){
+            sb.append(ch+"#");
         }
-        return right-left-1; 
-    }
-    
-    public String longestPalindrome(String str) {
+        
+        String str = sb.toString();
         int n = str.length();
         
-        int maxPalindromeLen = 0;
-        int maxPalindromeStart = 0;
+        //stores longest palindrome center at i
+        int[] p = new int[n];
+        int center = 0, right = 0;
+        
+        int longestLen = 0, longestCenter = 0;
         
         for(int i = 0; i < n; i++){
-            int oddPalindromeLen = maxPalindromeLen(str, i-1, i+1);
-            int evenPalindromeLen = maxPalindromeLen(str, i, i+1);
-            if(oddPalindromeLen > maxPalindromeLen){
-                maxPalindromeStart = i - oddPalindromeLen/2;
-                maxPalindromeLen = oddPalindromeLen;
+            
+            int mirror = 2*center - i;
+            if(right > i) p[i] = Math.min(p[mirror], right-i);
+            
+            int a = i-(p[i]+1);
+            int b = i+(p[i]+1);
+            while(a >= 0 && b < str.length() && str.charAt(a) == str.charAt(b)){
+                a--;
+                b++;
+                p[i]++;
             }
-            if(evenPalindromeLen > maxPalindromeLen){
-                maxPalindromeStart = i - evenPalindromeLen/2 + 1;
-                maxPalindromeLen = evenPalindromeLen;
+            
+            if(p[i] > longestLen){
+                longestCenter = i;
+                longestLen = p[i];
             }
+            
+            if(i+p[i] >= right){
+                right = i+p[i];
+                center = i;
+            }
+            
         }
         
-        
-        return str.substring(maxPalindromeStart, maxPalindromeStart + maxPalindromeLen);
+        return str.substring(longestCenter-longestLen, longestCenter + longestLen).replace("#", "");
         
     }
 }
