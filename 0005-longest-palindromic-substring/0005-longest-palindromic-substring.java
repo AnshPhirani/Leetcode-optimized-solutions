@@ -1,6 +1,6 @@
 class Solution {
     public String longestPalindrome(String s) {
-        
+        // modifying the string so that it works for both odd and even lenght palindrome
         StringBuilder sb = new StringBuilder();
         sb.append('#');
         for(char ch : s.toCharArray()){
@@ -34,7 +34,7 @@ class Solution {
                 longestLen = p[i];
             }
             
-            if(i+p[i] >= right){
+            if(i+p[i] > right){
                 right = i+p[i];
                 center = i;
             }
