@@ -11,28 +11,23 @@
 
 class Solution {
     ListNode head;
-    int size;
     
     public Solution(ListNode head) {
         this.head = head;
-        this.size = 0;
-        
-        ListNode temp = head;
-        while(temp != null){
-            size++;
-            temp = temp.next;
-        }
-        
     }
     
     public int getRandom() {
         Random rand = new Random();
-        
-        int idx = rand.nextInt(size);
-        ListNode temp = head;
-        while(idx-- > 0) temp = temp.next;
-        
-        return temp.val;
+        int i = 1, res = head.val;
+        ListNode cur = head.next;
+        while(cur != null){
+            if(rand.nextInt(0, i+1) == 0){
+                res = cur.val;
+            }
+            cur = cur.next;
+            i++;
+        }
+        return res;
     }
 }
 
