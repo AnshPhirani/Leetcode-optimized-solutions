@@ -10,21 +10,29 @@
  */
 
 class Solution {
-    List<Integer> ll;
+    ListNode head;
+    int size;
     
     public Solution(ListNode head) {
-        this.ll = new ArrayList<>();
+        this.head = head;
+        this.size = 0;
         
-        while(head != null){
-            ll.add(head.val);
-            head = head.next;
+        ListNode temp = head;
+        while(temp != null){
+            size++;
+            temp = temp.next;
         }
+        
     }
     
     public int getRandom() {
         Random rand = new Random();
-        int idx = rand.nextInt(ll.size());
-        return ll.get(idx);
+        
+        int idx = rand.nextInt(size);
+        ListNode temp = head;
+        while(idx-- > 0) temp = temp.next;
+        
+        return temp.val;
     }
 }
 
