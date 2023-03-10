@@ -18,8 +18,9 @@ class Solution {
     
     public int getRandom() {
         Random rand = new Random();
-        int i = 1, res = head.val;
-        ListNode cur = head.next;
+        
+        int i = 0, res = 0;
+        ListNode cur = head;
         while(cur != null){
             if(rand.nextInt(0, i+1) == 0){
                 res = cur.val;
