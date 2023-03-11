@@ -1,54 +1,30 @@
 class Solution {
-    
-    private int[] constructZArray(char[] str){
-        int n = str.length;
-        int[] zArray = new int[n];
-        int left = 0, right = 0;
+    public int strStr(String text, String pattern) {
+        int n = text.length(), m = pattern.length();
         
-        for(int k = 1; k < n; k++){
-            if(k > right){
-                left = right = k;        
-                while(right < n && str[right] == str[right-left]){
-                    right++;
-                }
-                right--;
-                zArray[k] = right-left+1;
-            }
-            else{
-                int k1 = k-left;
-                if(zArray[k1] < right-k+1){
-                    zArray[k] = zArray[k1];
-                }
-                else{
-                    left = k;
-                    while(right < n && str[right] == str[right-left]){
-                        right++;
-                    }
-                    right--;
-                    zArray[k] = right-left+1;
-                }
-            }
+        final int prime = 3;
+        
+        int patternHash = 0;
+        for(int i = 0; i < m; i++){
+            patternHash += (pattern.charAt(i)-'a'+1) * ((int)Math.pow(prime, i));
         }
         
-        return zArray;
-    }
-    
-    
-    public int strStr(String text, String pattern) {
-        
-        char[] newStr = new char[pattern.length() + 1 + text.length()];
-        
-        int idx  = 0;
-        for(char ch : pattern.toCharArray()) newStr[idx++] = ch;
-        newStr[idx++] = '#'; // special character
-        for(char ch : text.toCharArray()) newStr[idx++] = ch;
-        
-        int[] zArray = constructZArray(newStr);
-        
-        for(int i = 0; i < zArray.length; i++){
-            if(zArray[i] == pattern.length()) return i-(pattern.length()+1);
+        int curHash = 0;
+        for(int i = 0; i < n; i++){
+            if(i < m){
+                curHash += (text.charAt(i)-'a'+1) * ((int)Math.pow(prime, i));
+            }
+            else{
+                curHash -= (text.charAt(i-m)-'a'+1);
+                curHash /= prime;
+                curHash += (text.charAt(i)-'a'+1) * ((int)Math.pow(prime, m-1));
+            }
+            
+
+            if(i >= m-1 && curHash == patternHash && text.substring(i-(m-1), i+1).equals(pattern)) return i-(m-1);
         }
         
         return -1;
+        
     }
 }
