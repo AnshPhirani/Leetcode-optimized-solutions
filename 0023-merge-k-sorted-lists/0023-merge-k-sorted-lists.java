@@ -10,30 +10,45 @@
  */
 class Solution {
 
+    private ListNode mergeLL(ListNode first, ListNode second){
+        ListNode head = new ListNode(-1);
+        ListNode curr = head;
+            
+        while(first != null && second != null){
+            if(first.val <= second.val){
+                curr.next = first;
+                first = first.next;
+            }
+            else{
+                curr.next = second;
+                second = second.next;
+            }
+            curr = curr.next;
+        }
+        
+        if(first != null) curr.next = first;
+        if(second != null) curr.next = second;
+        
+        return head.next;
+        
+    }
+    
+    private ListNode mergeSort(ListNode[] lists, int s, int e){
+        if(s > e) return null;
+        if(s == e) return lists[s];
+        
+        int mid = (s+e)/2;
+        ListNode first = mergeSort(lists, s, mid);
+        ListNode second = mergeSort(lists, mid+1, e);
+        return mergeLL(first, second);
+    }
+    
     
     public ListNode mergeKLists(ListNode[] lists) {
         int n = lists.length;
         if(n == 0) return null;
         
-        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
-        
-        for(int i = 0; i < n; i++){
-            if(lists[i] != null) pq.add(lists[i]);
-        }
-        
-        ListNode head = new ListNode(-1);
-        ListNode temp = head;
-        while(!pq.isEmpty()){
-            ListNode curr = pq.poll();
-            temp.next = curr;
-            temp = curr;
-            
-            if(curr.next != null) pq.add(curr.next);
-            
-        }
-        
-        return head.next;
-        
+        return mergeSort(lists, 0, n-1);
         
     }
 }
