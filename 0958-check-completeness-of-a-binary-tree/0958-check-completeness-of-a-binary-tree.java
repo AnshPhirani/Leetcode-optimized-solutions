@@ -24,9 +24,11 @@ class Solution {
         
         while(!que.isEmpty()){
             TreeNode curr = que.poll();
-            if(curr != null && gotNullSoFar) return false;
-            else if(curr == null) gotNullSoFar = true;
+            if(curr == null){
+                gotNullSoFar = true;
+            }
             else{
+                if(gotNullSoFar) return false;
                 que.add(curr.left);
                 que.add(curr.right);   
             }
