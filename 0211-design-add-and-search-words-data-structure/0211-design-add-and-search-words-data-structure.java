@@ -37,8 +37,8 @@ class WordDictionary {
         char ch = word.charAt(idx);
 
         if(ch == '.'){
-            for(char x = 'a'; x <= 'z'; x++){
-                if(root.childrens[x-'a'] != null && search(idx+1, word, root.childrens[x-'a'])) return true;
+            for(int i = 0; i < 26; i++){
+                if(root.childrens[i] != null && search(idx+1, word, root.childrens[i])) return true;
             }
             return false;
         }
