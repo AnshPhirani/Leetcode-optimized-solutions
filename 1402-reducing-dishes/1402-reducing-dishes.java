@@ -1,23 +1,20 @@
 class Solution {
-
-    Integer[][] memo;
-    
-    private int dfs(int idx, int time, int[] satisfaction){
-        if(idx == satisfaction.length){
-            return 0;
-        }
-        
-        if(memo[idx][time] != null) return memo[idx][time];
-        
-        return memo[idx][time] = Math.max(dfs(idx+1, time,  satisfaction), time*satisfaction[idx] + dfs(idx+1, time+1, satisfaction));
-        
-    }
     
     public int maxSatisfaction(int[] satisfaction) {
         Arrays.sort(satisfaction);
+        int n = satisfaction.length;
         
-        this.memo = new Integer[satisfaction.length][satisfaction.length+1];
+        int[][] dp = new int[n+1][n+1];
+
+        for(int i = n-1; i >= 0; i--){
+            for(int time = i; time >= 0; time--){
+                int include = (time+1)*satisfaction[i] + dp[i+1][time+1];
+                int exclude = dp[i+1][time];
+                dp[i][time] = Math.max(include, exclude); 
+            }
+        }
         
-        return dfs(0, 1, satisfaction);
+        return dp[0][0];
     }
 }
+
