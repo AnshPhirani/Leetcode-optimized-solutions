@@ -4,17 +4,23 @@ class Solution {
         Arrays.sort(satisfaction);
         int n = satisfaction.length;
         
-        int[][] dp = new int[n+1][n+1];
-
-        for(int i = n-1; i >= 0; i--){
-            for(int time = i; time >= 0; time--){
-                int include = (time+1)*satisfaction[i] + dp[i+1][time+1];
-                int exclude = dp[i+1][time];
-                dp[i][time] = Math.max(include, exclude); 
-            }
+        int sum = 0;
+        int start = n-1;
+        while(start >= 0 && sum + satisfaction[start] >= 0){
+            sum += satisfaction[start];
+            start--;
         }
         
-        return dp[0][0];
-    }
+        start++;
+        
+        int res = 0;
+        int time = 1;
+        while(start < n){
+            res += time*satisfaction[start];
+            time++;
+            start++;
+        }
+        
+        return res;
+    }        
 }
-
