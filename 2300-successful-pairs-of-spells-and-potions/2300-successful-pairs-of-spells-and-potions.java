@@ -3,8 +3,7 @@ class Solution {
     private int lowerBound(long spell, int[] potions, long success){
         int m = potions.length;
         int l = 0;
-        int h = m-1;
-        int ans = -1;
+        int h = m;
         while(l < h){
             int mid = l + (h-l)/2;
             if(spell*potions[mid] >= success){
@@ -15,7 +14,7 @@ class Solution {
             }
         }
         
-        return (potions[l]*spell >= success) ? l : l+1;
+        return l;
         
     }
     
