@@ -1,15 +1,15 @@
 class Solution {
     public int partitionString(String s) {
-        Set<Character> set = new HashSet<>();
+        int curSubstring = 0;
         int count = 1;
         for(char ch : s.toCharArray()){
-            if(set.contains(ch)){
-                set.clear();
-                set.add(ch);
-                count++;
+            int mask = 1<<(ch-'a');
+            if((mask&curSubstring) == 0){
+                curSubstring |= mask;
             }
             else{
-                set.add(ch);
+                count++;
+                curSubstring = mask;
             }
         }
         
