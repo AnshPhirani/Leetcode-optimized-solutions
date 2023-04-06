@@ -6,9 +6,13 @@ class Solution {
         
         grid[i][j] = 1;
         
-        // use single & here is important 
-        return dfs(i-1, j, n, m, grid) & dfs(i, j+1, n, m, grid)
-            & dfs(i+1, j, n, m, grid) & dfs(i, j-1, n, m, grid);
+        boolean res = true;
+        if(!dfs(i-1, j, n, m, grid)) res = false;
+        if(!dfs(i+1, j, n, m, grid)) res = false;
+        if(!dfs(i, j+1, n, m, grid)) res = false;
+        if(!dfs(i, j-1, n, m, grid)) res = false;
+        
+        return res;
         
     }
     
