@@ -31,8 +31,8 @@ class Solution {
         
         for(int v : adj.get(u)){
             if(!memo.containsKey(v)) dfs(v, colors, visited);
-            
-            int[] nextFreq = memo.get(v) == null ? new int[26] : memo.get(v);
+            if(hasCycle) return;
+            int[] nextFreq = memo.get(v);
             for(int i = 0; i < 26; i++){
                 curFreq[i] = Math.max(curFreq[i], nextFreq[i]);
             }
