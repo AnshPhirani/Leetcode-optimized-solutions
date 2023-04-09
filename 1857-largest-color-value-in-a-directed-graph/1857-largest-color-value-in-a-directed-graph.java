@@ -1,23 +1,9 @@
-// Map<Node, int[26]> memo;
-// {
-//    1 -> [b-1]
-//    4 -> [a-1]
-//    3 -> [a-1 c-1]
-//    2 -> a-2 c-1
-//    0 -> [a-3 c-1]
-// }
-
-// ans = 3;
-
-// [a-1 c-1]   
-// 0 -  
-
-
 class Solution {
     
     Map<Integer, int[]> memo;
     List<List<Integer>> adj;
     boolean hasCycle;
+    int maxColorFreq;
     
     private void dfs(int u, String colors, boolean[] visited){
         
@@ -40,6 +26,7 @@ class Solution {
         
         visited[u] = false;
         curFreq[colors.charAt(u) - 'a']++;
+        for(int curColorFreq : curFreq) maxColorFreq = Math.max(maxColorFreq, curColorFreq);
         memo.put(u, curFreq);
     }
     
@@ -49,6 +36,7 @@ class Solution {
         this.memo = new HashMap<>();
         this.adj = new ArrayList<>();
         this.hasCycle = false;
+        this.maxColorFreq = 0;
         
         for(int i = 0; i < n; i++) adj.add(new ArrayList<>());
         
@@ -56,19 +44,13 @@ class Solution {
             adj.get(edge[0]).add(edge[1]);
         }
         
+        boolean[] visited = new boolean[n];
         for(int i = 0; i < n; i++){
-            if(!memo.containsKey(i)) dfs(i, colors, new boolean[n]);
+            if(!memo.containsKey(i)) dfs(i, colors, visited);
             if(hasCycle) return -1;
         }
-        
-        
-        int maxColor = 0;
-        for(int nodeVal : memo.keySet()){
-            for(int colorCount : memo.get(nodeVal))
-                maxColor = Math.max(maxColor, colorCount);
-        }
-        
-        return maxColor;
+
+        return maxColorFreq;
         
     }
 }
