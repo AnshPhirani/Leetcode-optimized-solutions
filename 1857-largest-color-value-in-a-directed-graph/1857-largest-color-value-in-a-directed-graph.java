@@ -5,11 +5,11 @@ class Solution {
     boolean hasCycle;
     int maxColorFreq;
     
-    private void dfs(int u, String colors, boolean[] visited){
+    private int dfs(int u, String colors, boolean[] visited){
         
         if(visited[u]){
             hasCycle = true;
-            return;
+            return -1;
         }
         visited[u] = true;
         
@@ -17,7 +17,7 @@ class Solution {
         
         for(int v : adj.get(u)){
             if(!memo.containsKey(v)) dfs(v, colors, visited);
-            if(hasCycle) return;
+            if(hasCycle) return -1;
             int[] nextFreq = memo.get(v);
             for(int i = 0; i < 26; i++){
                 curFreq[i] = Math.max(curFreq[i], nextFreq[i]);
@@ -26,8 +26,8 @@ class Solution {
         
         visited[u] = false;
         curFreq[colors.charAt(u) - 'a']++;
-        for(int curColorFreq : curFreq) maxColorFreq = Math.max(maxColorFreq, curColorFreq);
         memo.put(u, curFreq);
+        return Arrays.stream(curFreq).max().getAsInt();
     }
     
     
@@ -46,7 +46,10 @@ class Solution {
         
         boolean[] visited = new boolean[n];
         for(int i = 0; i < n; i++){
-            if(!memo.containsKey(i)) dfs(i, colors, visited);
+            if(!memo.containsKey(i)) {
+                int curMaxFreq = dfs(i, colors, visited);
+                maxColorFreq = Math.max(maxColorFreq, curMaxFreq);
+            }
             if(hasCycle) return -1;
         }
 
