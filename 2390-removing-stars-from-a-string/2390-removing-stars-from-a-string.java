@@ -8,7 +8,7 @@ class Solution {
             else ans[k++] = s.charAt(i);
         }
         
-        return new String(ans).substring(0, k);
+        return new String(ans, 0, k);
         
     }
 }
