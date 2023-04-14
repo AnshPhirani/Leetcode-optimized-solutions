@@ -1,25 +1,29 @@
 class Solution {
-    
-    Integer[][] memo;
-    
-    private int helper(int s, int e, String str){
-        if(s > e) return 0;
-        if(s == e) return 1;
-        
-        if(memo[s][e] != null) return memo[s][e];
-        
-        if(str.charAt(s) == str.charAt(e)){
-            return memo[s][e] = 2 + helper(s+1, e-1, str);
-        }
-        else{
-            return memo[s][e] = Math.max(helper(s+1, e, str), helper(s, e-1, str));
-        }
-        
-    }
-    
     public int longestPalindromeSubseq(String s) {
-        this.memo = new Integer[s.length()][s.length()];
+        int n = s.length();
+        int[][] dp = new int[n][n];
+            
+        for(int g = 0; g < n; g++){
+            for(int start = 0; start < n-g; start++){
+                int end = start+g;
+                if(start == end){
+                    dp[start][end] = 1;
+                }
+                else if(s.charAt(start) == s.charAt(end)){
+                    if(start+1 <= end-1){
+                        dp[start][end] = 2 + dp[start+1][end-1];
+                    }
+                    else{
+                        dp[start][end] = 2;
+                    }
+                }
+                else{
+                    dp[start][end] = Math.max(dp[start+1][end], dp[start][end-1]);
+                }
+            }
+        }
+    
+        return dp[0][n-1];
         
-        return helper(0, s.length()-1, s);
     }
 }
