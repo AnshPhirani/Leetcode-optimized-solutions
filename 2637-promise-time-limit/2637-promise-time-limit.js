@@ -6,13 +6,13 @@
 var timeLimit = function(fn, t) {
     const maxTimeLimit = t;
 	return async function(...args) {
-        return new Promise((resolve, reject) =>{
-            setTimeout(() => {
-                reject("Time Limit Exceeded");
-            }, maxTimeLimit);
-            
-            fn(...args).then((res) => resolve(res)).catch(reject);
+        const promise1 = new Promise((resolve, reject) => {
+            setTimeout(() => reject("Time Limit Exceeded"), maxTimeLimit);
         });
+        
+        const promise2 = fn(...args)
+        
+        return Promise.race([promise1, promise2]);
     }
 };
 
