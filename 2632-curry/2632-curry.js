@@ -3,12 +3,13 @@
  * @return {Function}
  */
 var curry = function(fn) {
-    let args = [];
+ 
     return function curried(...curArgs) {
-        args = [...args, ...curArgs];
-        if(fn.length == args.length) return fn(...args);
-        return curried;
-    };
+        if(curArgs.length == fn.length) return fn(...curArgs);
+        return function(...remainingArgs){
+            return curried(...curArgs, ...remainingArgs);
+        }
+    }
 };
 
 /**
