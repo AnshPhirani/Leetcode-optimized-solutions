@@ -14,11 +14,9 @@ class Solution {
         long res = 0;
         
         // selecting from the kth position
-        if(freq[k][cur-'a'] > 0){
-            long select = (freq[k][cur-'a'] * helper(k+1, idx+1, n, target)%MOD)%MOD;
-            res = (res + select)%MOD;
-        }
-        
+        long select = (freq[k][cur-'a'] * helper(k+1, idx+1, n, target)%MOD)%MOD;
+        res = (res + select)%MOD;
+
         // skipping the kth position
         long skip = helper(k+1, idx, n, target);
         res = (res + skip)%MOD;
