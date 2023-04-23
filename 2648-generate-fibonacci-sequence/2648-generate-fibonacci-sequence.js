@@ -7,15 +7,11 @@ var fibGenerator = function*() {
     let second = 1;
     while(true){
         yield first;
-        let temp = second;
-        second = first+second;
-        first = temp;
+        [first, second] = [second, first+second];
     }
     
 };
 
-// const gen = fibGenerator();
-// console.log(JSON.stringify(gen));
 
 /**
  * const gen = fibGenerator();
