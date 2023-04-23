@@ -5,9 +5,11 @@
 var fibGenerator = function*() {
     let first = 0;
     let second = 1;
+    yield first;
+    yield second;
     while(true){
-        yield first;
         [first, second] = [second, first+second];
+        yield second;
     }
     
 };
