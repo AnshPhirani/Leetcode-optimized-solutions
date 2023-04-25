@@ -1,22 +1,22 @@
 class SmallestInfiniteSet {
-    private TreeSet<Integer> set;
+    private Set<Integer> set;
     private int k;
+    
     public SmallestInfiniteSet() {
         this.k = 1;
-        this.set = new TreeSet<>();
+        this.set = new HashSet<>();
     }
     
     public int popSmallest() {
         if(set.isEmpty()) return k++;
-        if(k == set.first()){
-            set.pollFirst();
-            return k++;
-        }
-        return k < set.first() ? k++ : set.pollFirst();
+        int min = Collections.min(set);
+        set.remove(min);
+        return min;
+        
     }
     
     public void addBack(int num) {
-        set.add(num);
+        if(k > num) set.add(num);
     }
 }
 
