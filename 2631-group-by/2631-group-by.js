@@ -3,13 +3,12 @@
  * @return {Array}
  */
 Array.prototype.groupBy = function(fn) {
-    const obj = {};
-    for(const ele of this){
-        const key = fn(ele);
-        if(!obj[key]) obj[key] = [];
-        obj[key].push(ele);
-    }
-    return obj;
+    return this.reduce((res, value) => {
+        const key = fn(value);
+        if(!res[key]) res[key] = [];
+        res[key].push(value);
+        return res;
+    }, {});
 };
 
 /**
