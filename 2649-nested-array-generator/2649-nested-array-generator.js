@@ -9,12 +9,7 @@ var inorderTraversal = function*(arr) {
     }
 
     for(let ele of arr){
-        const gen = inorderTraversal(ele);
-        let cur = gen.next();
-        while(!cur.done){
-            yield cur.value;
-            cur = gen.next();
-        }
+        yield* inorderTraversal(ele);
     }
     
 };
