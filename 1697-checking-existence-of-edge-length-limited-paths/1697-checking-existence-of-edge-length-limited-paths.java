@@ -9,7 +9,7 @@ class UnionFind{
     
     public int find(int node){
         if(group[node] == node) return node;
-        return find(group[node]);
+        return group[node] = find(group[node]);
     }
     
     
