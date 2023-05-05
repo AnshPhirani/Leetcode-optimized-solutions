@@ -9,7 +9,7 @@ class Solution {
             if(isVowel(s.charAt(i))) curVowelFreq++;
             if(i >= k && isVowel(s.charAt(i-k))) curVowelFreq--;
             
-            maxVowelFreq = Math.max(maxVowelFreq, curVowelFreq);
+            if(i >= k-1) maxVowelFreq = Math.max(maxVowelFreq, curVowelFreq);
         }
         
         return maxVowelFreq;
