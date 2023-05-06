@@ -35,10 +35,10 @@ class Solution {
         for(int i = 0; i < n; i++){
             int comp = target - nums[i];
             int compIdx = lowerBound(nums, comp);
-            if(compIdx >= i){
-                res += power(2, compIdx-i);
-                res %= MOD;
-            }
+            if(compIdx < i) break;
+
+            res += power(2, compIdx-i);
+            res %= MOD;
         }
         
         return (int)(res%MOD);
