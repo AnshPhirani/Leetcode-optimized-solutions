@@ -1,15 +1,6 @@
 class Solution {
     private static final int MOD = (int)1e9 + 7;
     
-    private long power(int x, int y){
-        if(y == 0) return 1;
-        if(y == 1) return x;
-        
-        long temp = power(x, y/2);
-        if(y%2 == 0) return (temp%MOD * temp%MOD)%MOD;
-        else return (temp%MOD * temp%MOD * x)%MOD;
-    }
-    
     private int lowerBound(int[] nums, int target){
         int l = 0, r = nums.length-1;
         int res = -1;
@@ -31,16 +22,21 @@ class Solution {
         Arrays.sort(nums);
         int n = nums.length;
         
-        long res = 0;
-        for(int i = 0; i < n; i++){
-            int comp = target - nums[i];
-            int compIdx = lowerBound(nums, comp);
-            if(compIdx < i) break;
+        int[] power = new int[n];
+        power[0] = 1;
+        for(int i = 1; i < n; i++){
+            power[i] = (2*power[i-1])%MOD;
+        }
+            
+        int res = 0;
+        for(int left = 0; left < n; left++){
+            int right = lowerBound(nums, target-nums[left]);
+            if(right < left) break;
 
-            res += power(2, compIdx-i);
+            res += power[right-left];
             res %= MOD;
         }
         
-        return (int)(res%MOD);
+        return res%MOD;
     }
 }
