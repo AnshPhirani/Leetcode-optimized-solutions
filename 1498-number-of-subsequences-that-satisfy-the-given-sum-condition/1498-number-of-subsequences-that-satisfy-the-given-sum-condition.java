@@ -1,23 +1,6 @@
 class Solution {
     private static final int MOD = (int)1e9 + 7;
-    
-    private int lowerBound(int[] nums, int target){
-        int l = 0, r = nums.length-1;
-        int res = -1;
-        while(l <= r){
-            int mid = l + (r-l)/2;
-            if(nums[mid] <= target){
-                res = mid;
-                l = mid+1;
-            }
-            else{
-                r = mid-1;
-            }
-        }
-        
-        return res;
-    }
-    
+
     public int numSubseq(int[] nums, int target) {
         Arrays.sort(nums);
         int n = nums.length;
@@ -29,12 +12,16 @@ class Solution {
         }
             
         int res = 0;
-        for(int left = 0; left < n; left++){
-            int right = lowerBound(nums, target-nums[left]);
-            if(right < left) break;
-
-            res += power[right-left];
-            res %= MOD;
+        int left = 0, right = n-1;
+        while(left <= right){
+            if(nums[left]+nums[right] <= target){
+                res += power[right-left];
+                res %= MOD;
+                left++;
+            }
+            else{
+                right--;
+            }
         }
         
         return res%MOD;
