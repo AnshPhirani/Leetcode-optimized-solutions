@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/apply-transform-over-each-element-in-array/">2635. Apply Transform Over Each Element in Array</a></h2><h3>Easy</h3><hr><div><p>Write a function that takes an input array of integers&nbsp;<code>arr</code>&nbsp;and mapping function&nbsp;<code>fn</code>&nbsp;and returns a new array.</p>
+<h2><a href="https://leetcode.com/problems/apply-transform-over-each-element-in-array/">2635. Apply Transform Over Each Element in Array</a></h2><h3>Easy</h3><hr><div><p>Given an integer array&nbsp;<code>arr</code>&nbsp;and a mapping function&nbsp;<code>fn</code>, return&nbsp;a new array with a transformation applied to each element.</p>
 
 <p>The returned array should be created such that&nbsp;<code>returnedArray[i] = fn(arr[i], i)</code>.</p>
 
