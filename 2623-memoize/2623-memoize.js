@@ -4,14 +4,7 @@
 function memoize(fn) {
     const memo = {};
     return function(...args) {
-        let key;
-        if(args.length == 2){
-            key = args[0] + "*" + args[1];
-        }
-        else{
-            key = args[0];
-        }
-        
+        const key = args.toString();
         if(memo.hasOwnProperty(key)) return memo[key];
         return memo[key] = fn(...args);
         
