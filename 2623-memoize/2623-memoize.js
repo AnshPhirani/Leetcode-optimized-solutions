@@ -2,12 +2,19 @@
  * @param {Function} fn
  */
 function memoize(fn) {
-    const cache = {};
+    const memo = {};
     return function(...args) {
-        const key = args.toString();
-        if(cache[key] != undefined) return cache[key];
-        cache[key] = fn(...args);
-        return cache[key];
+        let key;
+        if(args.length == 2){
+            key = args[0] + "*" + args[1];
+        }
+        else{
+            key = args[0];
+        }
+        
+        if(memo.hasOwnProperty(key)) return memo[key];
+        return memo[key] = fn(...args);
+        
     }
 }
 
