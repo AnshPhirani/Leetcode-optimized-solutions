@@ -3,11 +3,9 @@
  * @return {Function}
  */
 var curry = function(fn) {
-    const args = [];
-    return function curried(...curArgs) {
-        args.push(...curArgs);
+    return function curried(...args) {
         if(args.length === fn.length) return fn(...args);
-        return curried;
+        return (...remArgs) => curried(...args, ...remArgs);
     };
 };
 
