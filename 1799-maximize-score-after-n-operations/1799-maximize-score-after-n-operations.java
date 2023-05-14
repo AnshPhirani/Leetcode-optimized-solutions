@@ -4,36 +4,47 @@ class Solution {
         if(b == 0) return a;
         return gcd(b, a%b);
     }
+   
+    private boolean isBitSet(int visited, int bitIdx){
+        int mask = (1 << bitIdx);
+        return ((visited&mask) != 0);
+    }
     
-    private Map<String, Integer> memo;
+    private int setBit(int visited, int bitIdx){
+        return visited | (1 << bitIdx);
+    }
     
-    private int helper(int[] nums, boolean[] visited, int operation){
+    private Map<Integer, Integer> memo;
+    
+    private int helper(int[] nums, int visited, int operation){
         int n = nums.length;
         if(operation > n/2) return 0; 
         
-        String key = Arrays.toString(visited);
-        if(memo.containsKey(key)) return memo.get(key);
+        if(memo.containsKey(visited)) return memo.get(visited);
         
         int maxScore = 0;
         
         for(int i = 0; i < n; i++){
-            if(visited[i]) continue;
+            if(isBitSet(visited, i)) continue;
             for(int j = i+1; j < n; j++){
-                if(visited[j]) continue;
+                if(isBitSet(visited, j)) continue;
                 
-                visited[i] = visited[j] = true;
-                int curScore = operation * gcd(nums[i], nums[j]) + helper(nums, visited, operation+1);
+                int newVisited = visited;
+                newVisited = setBit(newVisited, i);
+                newVisited = setBit(newVisited, j);
+                
+                int curScore = operation * gcd(nums[i], nums[j]) + helper(nums, newVisited, operation+1);
                 maxScore = Math.max(maxScore, curScore);
-                visited[i] = visited[j] = false; // backtrack
+                
             }
         }
         
-        memo.put(key, maxScore);
+        memo.put(visited, maxScore);
         return maxScore;
     }
     
     public int maxScore(int[] nums) {
-        boolean[] visited = new boolean[nums.length];
+        int visited = 0;
         this.memo = new HashMap<>();
         return helper(nums, visited, 1);
     
