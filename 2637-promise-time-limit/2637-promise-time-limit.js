@@ -4,15 +4,12 @@
  * @return {Function}
  */
 var timeLimit = function(fn, t) {
-    const maxTimeLimit = t;
 	return async function(...args) {
-        const promise1 = new Promise((resolve, reject) => {
-            setTimeout(() => reject("Time Limit Exceeded"), maxTimeLimit);
-        });
         
-        const promise2 = fn(...args)
+        const timeLimitPromise = new Promise((res, rej) => setTimeout(rej, t, "Time Limit Exceeded"));
         
-        return Promise.race([promise1, promise2]);
+        return Promise.race([fn(...args), timeLimitPromise])
+        
     }
 };
 
