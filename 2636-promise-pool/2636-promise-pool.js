@@ -4,30 +4,25 @@
  * @return {Function}
  */
 var promisePool = async function(functions, n) {
-    return new Promise(resolve => {
+    return new Promise(res => {
+        if(functions.length == 0) res();
         
-        if(functions.length === 0) resolve();
-        
-        var idx = 0;
-        var inRunning = 0;
-        
-        const next = () => {   
-            if(idx < functions.length){
-                functions[idx]().then(next);
-                idx++;
+        let inRunning = 0;
+        let idx = 0;
+        function next(){
+            if(idx === functions.length){
+                inRunning--;
+                if(inRunning == 0) res();
             }
             else{
-                inRunning--;
+                functions[idx++]().then(next);
             }
-            
-            if(inRunning === 0) resolve();
         }
 
-        while(idx < Math.min(functions.length, n)){
-            functions[idx]().then(next);
+        while(idx < Math.min(n, functions.length)){
             inRunning++;
-            idx++;
-        }
+            functions[idx++]().then(next);
+        } 
     });
 };
 
