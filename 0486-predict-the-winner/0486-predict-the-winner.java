@@ -1,19 +1,25 @@
 class Solution {
-    private int dfs(int l, int r, int turn, int[] piles){
-        if(l > r) return 0;
-        if(turn == 0){
-            int left = piles[l] + dfs(l+1, r, 1, piles);
-            int right = piles[r] + dfs(l, r-1, 1, piles);
-            return Math.max(left, right);
-        }
-        else{
-            int left = -piles[l] + dfs(l+1, r, 0, piles);
-            int right = -piles[r] + dfs(l, r-1, 0, piles);
-            return Math.min(left, right);
-        }
-    }
 
     public boolean PredictTheWinner(int[] piles) {
-        return dfs(0, piles.length-1, 0, piles) >= 0;
+        int n = piles.length;
+        int[][] dp = new int[n][n];
+        for(int gap = 0; gap < n; gap++){
+            for(int l = 0; l < n-gap; l++){
+                int r = l+gap;
+                if(gap == 0) {
+                    dp[l][r] = piles[l];
+                    continue;
+                }
+                int turn = (n-gap)%2;
+                if(turn == 1){ // player 1 turn
+                    dp[l][r] = Math.max(piles[l] + dp[l+1][r], piles[r] + dp[l][r-1]);
+                }
+                else{ // player 2 turn
+                    dp[l][r] = Math.min(-piles[l] + dp[l+1][r], -piles[r] + dp[l][r-1]);
+                }
+            }
+        }
+        
+        return dp[0][n-1] >= 0;
     }
 }
