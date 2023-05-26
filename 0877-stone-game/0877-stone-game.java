@@ -1,25 +1,26 @@
 class Solution {
-    
-    Integer[][] memo;
-    
-    private int dfs(int l, int r, int turn, int[] piles){
-        if(l > r) return 0;
-        
-        if(memo[l][r] != null) return memo[l][r];
-        
-        if(turn == 0){
-            int left = piles[l] + dfs(l+1, r, 1, piles);
-            int right = piles[r] + dfs(l, r-1, 1, piles);
-            return memo[l][r] = Math.max(left, right);
-        }
-        else{
-            int left = -piles[l] + dfs(l+1, r, 0, piles);
-            int right = -piles[r] + dfs(l, r-1, 0, piles);
-            return memo[l][r] = Math.min(left, right);
-        }
-    }
+
     public boolean stoneGame(int[] piles) {
-        memo = new Integer[piles.length][piles.length];
-        return dfs(0, piles.length-1, 0, piles) > 0;
+        int n = piles.length;
+        int[][] dp = new int[n][n];
+        for(int gap = 0; gap < n; gap++){
+            for(int l = 0; l < n-gap; l++){
+                int r = l+gap;
+                if(gap == 0) {
+                    dp[l][r] = piles[l];
+                    continue;
+                }
+                int turn = (n-gap)%2;
+                if(turn == 0){
+                    dp[l][r] = Math.max(piles[l] + dp[l+1][r], piles[r] + dp[l][r-1]);
+                }
+                else{
+                    dp[l][r] = Math.max(-piles[l] + dp[l+1][r], -piles[r] + dp[l][r-1]);
+                }
+            }
+        }
+        
+        return dp[0][n-1] > 0;
+        
     }
 }
