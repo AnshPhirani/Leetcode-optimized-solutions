@@ -1,28 +1,19 @@
 class Solution {
-    private int[] nums;
-    
-    Integer[][][] memo;
-    
-    private int helper(int l, int r, int player){
+    private int dfs(int l, int r, int turn, int[] piles){
         if(l > r) return 0;
-        if(memo[l][r][player] != null) return memo[l][r][player];
-        
-        if(player == 0){
-            int low = nums[l] + helper(l+1, r, 1-player);
-            int high = nums[r] + helper(l, r-1, 1-player);
-            return memo[l][r][player] = Math.max(low, high);
+        if(turn == 0){
+            int left = piles[l] + dfs(l+1, r, 1, piles);
+            int right = piles[r] + dfs(l, r-1, 1, piles);
+            return Math.max(left, right);
         }
         else{
-            int low = -nums[l] + helper(l+1, r, 1-player);
-            int high = -nums[r] + helper(l, r-1, 1-player);
-            return memo[l][r][player] = Math.min(low, high);
+            int left = -piles[l] + dfs(l+1, r, 0, piles);
+            int right = -piles[r] + dfs(l, r-1, 0, piles);
+            return Math.min(left, right);
         }
     }
-    
-    public boolean PredictTheWinner(int[] nums) {
 
-        this.nums = nums;
-        this.memo = new Integer[nums.length][nums.length][2];
-        return helper(0, nums.length-1, 0) >= 0;
+    public boolean PredictTheWinner(int[] piles) {
+        return dfs(0, piles.length-1, 0, piles) >= 0;
     }
 }
