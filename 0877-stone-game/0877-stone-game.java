@@ -11,11 +11,11 @@ class Solution {
                     continue;
                 }
                 int turn = (n-gap)%2;
-                if(turn == 0){
+                if(turn == 1){ // alice turn
                     dp[l][r] = Math.max(piles[l] + dp[l+1][r], piles[r] + dp[l][r-1]);
                 }
-                else{
-                    dp[l][r] = Math.max(-piles[l] + dp[l+1][r], -piles[r] + dp[l][r-1]);
+                else{ // bob turn
+                    dp[l][r] = Math.min(-piles[l] + dp[l+1][r], -piles[r] + dp[l][r-1]);
                 }
             }
         }
