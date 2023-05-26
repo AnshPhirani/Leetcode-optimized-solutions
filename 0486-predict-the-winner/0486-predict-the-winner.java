@@ -2,6 +2,8 @@ class Solution {
 
     public boolean PredictTheWinner(int[] piles) {
         int n = piles.length;
+        if(n%2 == 0) return true;
+        
         int[][] dp = new int[n][n];
         for(int gap = 0; gap < n; gap++){
             for(int l = 0; l < n-gap; l++){
