@@ -2,7 +2,7 @@ class Solution {
     Integer[][] memo;
     int[] prefixSum;
     
-    private int helper(int s, int e, int[] stoneValue){
+    private int helper(int s, int e){
         if(s == e) return 0;
         if(memo[s][e] != null) return memo[s][e];
     
@@ -12,13 +12,13 @@ class Solution {
             int leftSum = prefixSum[mid+1] - prefixSum[s];
             int rightSum = prefixSum[e+1] - prefixSum[mid+1];
             if(leftSum < rightSum){
-                ans = Math.max(ans, leftSum+helper(s, mid, stoneValue));
+                ans = Math.max(ans, leftSum+helper(s, mid));
             }
             else if(leftSum > rightSum){
-                ans = Math.max(ans, rightSum+helper(mid+1, e, stoneValue));
+                ans = Math.max(ans, rightSum+helper(mid+1, e));
             }
             else{
-                ans = Math.max(ans, leftSum+ Math.max(helper(s, mid, stoneValue), helper(mid+1, e, stoneValue)));
+                ans = Math.max(ans, leftSum+ Math.max(helper(s, mid), helper(mid+1, e)));
             }
         }
         
@@ -35,6 +35,6 @@ class Solution {
             prefixSum[i] = prefixSum[i-1] + stoneValue[i-1];
         }
         
-        return helper(0, n-1, stoneValue);
+        return helper(0, n-1);
     }
 }
