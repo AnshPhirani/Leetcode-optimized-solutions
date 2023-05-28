@@ -1,29 +1,29 @@
 class Solution {
     
-    Integer[][] memo;
-    
-    private int helper(int i, int j, int s, int e, int[] cuts){
-        if(s > e) return 0;
-        
-        if(memo[s][e] != null) return memo[s][e];
-        
-        int curLen = j-i;
-        int curAns = Integer.MAX_VALUE;
-        
-        for(int k = s; k <= e; k++){
-            int cutIdx = cuts[k];
-            curAns = Math.min(curAns, curLen + helper(i, cutIdx, s, k-1, cuts) + helper(cutIdx, j, k+1, e, cuts));
-        }
-        
-        return memo[s][e] = curAns;
-        
-    }
-    
     public int minCost(int n, int[] cuts) {
-        int len = cuts.length;
-        this.memo = new Integer[len][len];
         Arrays.sort(cuts);
         
-        return helper(0, n, 0, len-1, cuts);
+        // building newCuts array
+        int[] newCuts = new int[cuts.length+2];
+        newCuts[0] = 0;
+        for(int i = 1; i <= cuts.length; i++) newCuts[i] = cuts[i-1];
+        newCuts[newCuts.length-1] = n;
+        
+        int m = newCuts.length;
+        
+        int[][] dp = new int[m][m];
+        for(int g = 2; g < m; g++){
+            for(int s = 0; s < m-g; s++){
+                int e = s+g;
+                int ans = Integer.MAX_VALUE;
+                for(int k = s+1; k < e; k++){
+                    ans = Math.min(ans, dp[s][k] + dp[k][e] + newCuts[e]-newCuts[s]);
+                }
+                dp[s][e] = ans;
+            }
+        }
+        
+        
+        return dp[0][m-1];
     }
 }
