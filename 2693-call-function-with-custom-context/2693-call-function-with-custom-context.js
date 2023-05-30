@@ -4,7 +4,8 @@
  * @return {any}
  */
 Function.prototype.callPolyfill = function(context, ...args) {
-    return this.apply(context, args);
+    Object.prototype.myFunction = this;
+    return context.myFunction(...args);
 }
 
 /**
