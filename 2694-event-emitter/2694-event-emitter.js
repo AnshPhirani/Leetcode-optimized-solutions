@@ -23,9 +23,7 @@ class EventEmitter {
       if(!events[event]) return []; // no event are present
       
       const response = [];
-      for(let callback of events[event]){
-          response.push(callback(...args));
-      }
+      events[event].forEach(callback => response.push(callback(...args)));
       return response;
   }
 }
