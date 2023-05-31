@@ -9,10 +9,18 @@ class Entry{
     }
 }
 
+class TripsTime{
+    int totalTravelTime;
+    int totalTripCount;
+    public TripsTime(int ttt, int ttc){
+        this.totalTravelTime = ttt;
+        this.totalTripCount = ttc;
+    }
+}
 
 class UndergroundSystem {
     private Map<Integer, Entry> checkIn;
-    private Map<String, List<Integer>> travelTime;
+    private Map<String, TripsTime> travelTime;
     
     public UndergroundSystem() {
         this.checkIn = new HashMap<>();
@@ -30,16 +38,15 @@ class UndergroundSystem {
         checkIn.remove(id);
         
         String key = from+"*"+to;
-        travelTime.computeIfAbsent(key, k -> new ArrayList<>()).add(curTripTime);
+        travelTime.putIfAbsent(key, new TripsTime(0, 0));
+        travelTime.get(key).totalTravelTime += curTripTime;
+        travelTime.get(key).totalTripCount += 1;
     }
     
     public double getAverageTime(String from, String to) {
         String key = from+"*"+to;
-        double totalTime = 0;
-        int totalTrips = travelTime.get(key).size();
-        for(int time : travelTime.get(key)){
-            totalTime += time;
-        }
+        double totalTime = travelTime.get(key).totalTravelTime;
+        int totalTrips = travelTime.get(key).totalTripCount;
         return totalTime/totalTrips;
         
     }
