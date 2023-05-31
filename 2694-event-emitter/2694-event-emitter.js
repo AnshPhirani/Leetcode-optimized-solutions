@@ -2,19 +2,18 @@ class EventEmitter {
     
     constructor(){
         this.events = {};
-        this.eventNumber = 0;
     }
     
   subscribe(event, cb) {
       const events = this.events;
-      const eventNumber = this.eventNumber++;
-      
-      if(!events.hasOwnProperty(event)) events[event] = {};
-      events[event][eventNumber] = {callback : cb};
+ 
+      if(!events.hasOwnProperty(event)) events[event] = [];
+      events[event].push(cb);
       
     return {
         unsubscribe: () => {
-            delete events[event][eventNumber];
+            events[event] = events[event].filter(fn => fn !== cb);
+            if(events[event].length === 0) delete events[event];
         }
     };
   }
@@ -24,8 +23,7 @@ class EventEmitter {
       if(!events[event]) return []; // no event are present
       
       const response = [];
-      for(let eventNumber of Object.keys(events[event]).sort()){
-          const callback = events[event][eventNumber].callback;
+      for(let callback of events[event]){
           response.push(callback(...args));
       }
       return response;
