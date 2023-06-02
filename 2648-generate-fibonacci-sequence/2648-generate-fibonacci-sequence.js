@@ -1,19 +1,17 @@
 /**
  * @return {Generator<number>}
  */
-
 var fibGenerator = function*() {
-    let first = 0;
-    let second = 1;
-    yield first;
-    yield second;
+    let a = 0, b = 1;
+    yield a;
+    yield b;
+    
     while(true){
-        [first, second] = [second, first+second];
-        yield second;
+        [a, b] = [b, a+b];
+        yield b;
     }
     
 };
-
 
 /**
  * const gen = fibGenerator();
