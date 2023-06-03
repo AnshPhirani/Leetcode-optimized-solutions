@@ -17,19 +17,6 @@ class Solution {
             adj.get(manager[i]).add(i);
         }
         
-//         Queue<Integer> que = new LinkedList<>();
-//         que.add(headId);
-//         int totalTime = 0;
-//         while(!que.isEmpty()){
-//             int size = que.size();
-//             int curTime = 0;
-//             while(size-- > 0){
-//                 int cur = que.poll();
-//                 curTime = Math.max()
-//             }
-            
-//         }
-        
         return dfs(headId, adj, informTime);
     }
 }
