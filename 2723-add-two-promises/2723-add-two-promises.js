@@ -4,10 +4,8 @@
  * @return {Promise}
  */
 var addTwoPromises = async function(promise1, promise2) {
-    return new Promise(async (res, rej) => {
         const result = await Promise.all([promise1, promise2]);
-        res(result[0]+result[1]);
-    });
+        return result[0]+result[1];
 };
 
 /**
