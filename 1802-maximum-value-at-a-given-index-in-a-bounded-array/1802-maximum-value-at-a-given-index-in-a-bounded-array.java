@@ -30,16 +30,18 @@ class Solution {
         int l = 1, h = maxSum;
         int leftCount = index, rightCount = n-index-1;
         
+        int ans = -1;
         while(l <= h){
             int mid = l + (h-l)/2;
             if(minPossibleSum(mid, leftCount, rightCount) <= maxSum){
                 l = mid+1;
+                ans = mid;
             }
             else{
                 h = mid-1;
             }
         }
         
-        return h;
+        return ans;
     }
 }
