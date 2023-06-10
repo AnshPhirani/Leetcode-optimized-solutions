@@ -1,10 +1,10 @@
 class Solution {
     
-    private int getSplitCount(int maxSubarraySum, int[] nums){
+    private boolean isSplitPossible(int maxSubarraySum, int k, int[] nums){
         int curSum = 0;
         int i = 0, count = 1;
         while(i < nums.length){
-            if(nums[i] > maxSubarraySum) return Integer.MAX_VALUE;
+            if(nums[i] > maxSubarraySum) return false;
             
             if(curSum + nums[i] <= maxSubarraySum){
                 curSum += nums[i];
@@ -16,7 +16,8 @@ class Solution {
             i++;
         }
         
-        return count;
+        return count <= k;
+        
     }
     
     public int splitArray(int[] nums, int k) {
@@ -25,8 +26,7 @@ class Solution {
         int res = -1;
         while(l <= h){
             int mid = l+(h-l)/2;
-            int splitCount = getSplitCount(mid, nums);
-            if(splitCount <= k){
+            if(isSplitPossible(mid, k, nums)){
                 res = mid;
                 h = mid-1;
             }
