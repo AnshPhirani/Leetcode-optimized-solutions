@@ -1,13 +1,13 @@
 class SnapshotArray {
 
     private int snapId;
-    private Map<Integer, Integer>[] map;
+    private TreeMap<Integer, Integer>[] map;
     
     public SnapshotArray(int length) {
         this.snapId = 0;
-        this.map = new HashMap[length];
+        this.map = new TreeMap[length];
         for(int idx = 0; idx < length; idx++){
-            map[idx] = new HashMap<>();
+            map[idx] = new TreeMap<>();
         }
     }
     
@@ -20,13 +20,9 @@ class SnapshotArray {
     }
     
     public int get(int index, int snap_id) {
-        while(!map[index].containsKey(snap_id)){
-            snap_id--;
-            if(snap_id == -1) return 0; 
-        }
-        
-        return map[index].get(snap_id);
-        
+        Integer key = map[index].floorKey(snap_id);
+        if(key == null) return 0;
+        return map[index].get(key);
     }
 }
 
