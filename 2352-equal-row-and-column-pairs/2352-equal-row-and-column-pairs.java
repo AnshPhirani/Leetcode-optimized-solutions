@@ -1,21 +1,26 @@
 class Solution {
     
-    private boolean isEqual(int r, int c, int[][] grid){
-        for(int i = 0; i < grid.length; i++){
-            if(grid[r][i] != grid[i][c]) return false;
-        }
-        return true;
-    }
-    
     public int equalPairs(int[][] grid) {
         int n = grid.length;
+        
+        Map<String, Integer> freqMap = new HashMap<>();
         int count = 0;
         
         for(int r = 0; r < n; r++){
-            for(int c = 0; c < n; c++){
-                if(isEqual(r, c, grid)) count++;
-            }
+            String rowString = Arrays.toString(grid[r]);
+            freqMap.put(rowString, freqMap.getOrDefault(rowString, 0)+1);
         }
+        
+        
+        for(int c = 0; c < n; c++){
+            int[] col = new int[n];
+            for(int r = 0; r < n; r++){
+                col[r] = grid[r][c];
+            }
+            String colString = Arrays.toString(col);
+            count += freqMap.getOrDefault(colString, 0);
+        }
+        
         
         return count;
         
