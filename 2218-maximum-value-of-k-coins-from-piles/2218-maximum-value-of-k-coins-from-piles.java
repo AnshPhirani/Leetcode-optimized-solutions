@@ -24,7 +24,23 @@ class Solution {
             }
         }
         
-        this.memo = new Integer[piles.size()][k+1];
-        return  helper(0, k, piles);
+        int[][] dp = new int[k+1][piles.size()+1];
+        for(int i = 1; i <= k; i++){
+            dp[i][0] = Integer.MIN_VALUE;
+        }
+        
+        for(int curK = 1; curK <= k; curK++){
+            for(int curIdx = 1; curIdx <= piles.size(); curIdx++){
+                List<Integer> curPile = piles.get(curIdx-1);
+                
+                dp[curK][curIdx] = dp[curK][curIdx-1]; // not choosing from current pile
+                for(int i = 0; i < Math.min(curK, curPile.size()); i++){
+                    int temp = curPile.get(i) + dp[curK-(i+1)][curIdx-1];
+                    dp[curK][curIdx] = Math.max(dp[curK][curIdx],  temp);
+                }
+            }
+        }
+        
+        return dp[k][piles.size()];
     }
 }
