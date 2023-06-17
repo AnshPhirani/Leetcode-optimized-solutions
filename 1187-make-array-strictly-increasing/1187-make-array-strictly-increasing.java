@@ -42,12 +42,6 @@ class Solution {
     }
     
     public int makeArrayIncreasing(int[] arr1, int[] arr2) {
-        
-        Set<Integer> set = Arrays.stream(arr2).boxed().collect(Collectors.toSet());
-        
-        arr2 = new int[set.size()];
-        int idx = 0;
-        for(int ele : set) arr2[idx++] = ele;
         Arrays.sort(arr2);
         
         this.memo = new HashMap<>();
