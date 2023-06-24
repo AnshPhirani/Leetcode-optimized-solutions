@@ -1,39 +1,29 @@
 class Solution {
     
-    Map<Integer, Integer> helper(int s, int e, int[] rods){   
-        Set<Pair<Integer, Integer>> states = new HashSet<>();
-        states.add(new Pair(0, 0));
-        
-        for(int i = s; i <= e; i++){
-            int curRod = rods[i];
-            Set<Pair<Integer, Integer>> newStates = new HashSet<>();
-            for(Pair<Integer, Integer> cur : states){
-                newStates.add(new Pair(cur.getKey()+curRod, cur.getValue()));
-                newStates.add(new Pair(cur.getKey(), cur.getValue()+curRod));
-            }
-            states.addAll(newStates);
-        }
-        
-        Map<Integer, Integer> dp = new HashMap<>();
-        for(Pair<Integer, Integer> cur : states){
-            int left = cur.getKey();
-            int right = cur.getValue();
-            dp.put(left-right, Math.max(dp.getOrDefault(left-right, 0), left));
-        }
-        
-        return dp;
-    }
     
     public int tallestBillboard(int[] rods) {
-        Map<Integer, Integer> firstHalf = helper(0, rods.length/2, rods);
-        Map<Integer, Integer> secondHalf = helper(rods.length/2+1, rods.length-1, rods);
+        Map<Integer, Integer> dp = new HashMap<>();
+        dp.put(0, 0);
         
-        int res = 0;
-        for(int diff : firstHalf.keySet()){
-            if(secondHalf.containsKey(-diff)){
-                res = Math.max(res, firstHalf.get(diff) + secondHalf.get(-diff));
+        for(int rod : rods){
+            Map<Integer, Integer> newDp = new HashMap<>(dp);
+            
+            for(int diff : dp.keySet()){
+                int taller = dp.get(diff);
+                int shorter = taller-diff;
+                
+                // adding cur rod to taller stand
+                int newTaller = newDp.getOrDefault(diff+rod, 0);
+                newDp.put(diff+rod, Math.max(newTaller, taller+rod));
+                
+                // adding cur rod to shorted stand
+                int newDiff = Math.abs(shorter + rod - taller);
+                int newTaller2 = Math.max(shorter + rod, taller);
+                newDp.put(newDiff, Math.max(newTaller2, newDp.getOrDefault(newDiff, 0)));
             }
+            dp = newDp;
         }
-        return res;
+        
+        return dp.getOrDefault(0, 0);
     }
 }
