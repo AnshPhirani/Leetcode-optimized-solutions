@@ -1,18 +1,16 @@
 class Solution {
-    int curMin = Integer.MAX_VALUE;
     
     private int dfs(int idx, int[] cookies, int[] cookiesSum){
         if(idx == cookies.length){
-            int unfairness = Arrays.stream(cookiesSum).max().getAsInt();
-            curMin = Math.min(curMin, unfairness);
+            int unfairness = 0;
+            for(int count : cookiesSum) unfairness = Math.max(unfairness, count);
             return unfairness;
         }
         
         int ans = Integer.MAX_VALUE;
         for(int i = 0; i < cookiesSum.length; i++){
             cookiesSum[i] += cookies[idx];
-            if(cookiesSum[i] < curMin)
-                ans = Math.min(ans, dfs(idx+1, cookies, cookiesSum));
+            ans = Math.min(ans, dfs(idx+1, cookies, cookiesSum));
             cookiesSum[i] -= cookies[idx];
         }
         return ans;
