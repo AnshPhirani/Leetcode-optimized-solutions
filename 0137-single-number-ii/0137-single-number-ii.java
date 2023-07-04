@@ -10,12 +10,9 @@ class Solution {
             }
         }
         
-        for(int i = 0; i < 32; i++){
-            bitsCount[i] %= 3;
-        }
-        
         int ans = 0;
         for(int i = 0; i < 32; i++){
+            bitsCount[i] %= 3;
             ans += bitsCount[i] * (1 << i);
         }
         
