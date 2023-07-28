@@ -10,6 +10,7 @@ class Solution {
     }
     
     public boolean PredictTheWinner(int[] nums) {
+        if(nums.length%2 == 0) return true;
         int player1Score = helper(0, nums.length-1, nums);
         return player1Score >= 0;
     }
