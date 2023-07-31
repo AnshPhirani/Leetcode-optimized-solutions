@@ -14,10 +14,9 @@ class Solution {
                     dp[i][j] = dp[i+1][j+1];
                 }
                 else{
-                    int deleteBoth = s1.charAt(i) + s2.charAt(j) + dp[i+1][j+1];
                     int deleteFirst = s1.charAt(i) + dp[i+1][j];
                     int deleteSecond = s2.charAt(j) + dp[i][j+1];
-                    dp[i][j] = Math.min(deleteBoth, Math.min(deleteFirst, deleteSecond));
+                    dp[i][j] = Math.min(deleteFirst, deleteSecond);
                 }
             }
         }
