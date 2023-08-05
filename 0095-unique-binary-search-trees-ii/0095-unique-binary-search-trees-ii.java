@@ -15,7 +15,13 @@
  */
 class Solution {
     
+    Map<Pair<Integer, Integer>, List<TreeNode>> memo;
+    
     private List<TreeNode> helper(int start, int end){
+        
+        Pair<Integer, Integer> key = new Pair(start, end);
+        if(memo.containsKey(key)) return memo.get(key);
+        
         List<TreeNode> curAns = new ArrayList<>();
         
         if(start > end){
@@ -36,10 +42,12 @@ class Solution {
             }
         }
         
+        memo.put(key, curAns);
         return curAns;
     }
     
     public List<TreeNode> generateTrees(int n) {
+        this.memo = new HashMap<>();
         return helper(1, n);
     }
 }
