@@ -1,14 +1,8 @@
 class Solution {
     
     private boolean bSearch(int[] arr, int target){
-        int low = 0, high = arr.length-1;
-        while(low <= high){
-            int mid = (low+high)/2;
-            if(arr[mid] > target) high = mid-1;
-            else if(arr[mid] < target) low = mid+1;
-            else return true;
-        }
-        return false;
+        int idx = Arrays.binarySearch(arr, target);
+        return idx >= 0;
     }
     
     public boolean searchMatrix(int[][] matrix, int target) {
