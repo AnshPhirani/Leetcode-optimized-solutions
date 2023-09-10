@@ -12,7 +12,7 @@ class Solution {
         for(int val = 1; val < batchSize; val++){
             if(freq[val] > 0){
                 freq[val]--;
-                int newRemaining = (remaining-val+batchSize)%batchSize;
+                int newRemaining = (remaining+val)%batchSize;
                 int smallAns = helper(newRemaining, freq) + (remaining == 0 ? 1 : 0);
                 ans = Math.max(ans, smallAns);
                 freq[val]++;
