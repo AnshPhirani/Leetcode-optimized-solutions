@@ -16,25 +16,18 @@ class Pair<K, V>{
 class Solution {
     private Map<String, List<Pair<String, Boolean>>> adj;
     
-    private boolean dfs(String from, int ticketsUsed, int totalTickets, List<String> ans){
-        ans.add(from);
-        
-        if(ticketsUsed == totalTickets){
-            return true;
-        }
-        
+    private void dfs(String from, List<String> ans){
+       
         for(Pair<String, Boolean> neigh : adj.getOrDefault(from, new ArrayList<>())){
             String to = neigh.key;
             boolean used = neigh.value;
             if(used) continue;
             
             neigh.value = true;
-            if(dfs(to, ticketsUsed+1, totalTickets, ans)) return true;
-            neigh.value = false;
+            dfs(to, ans);
         }
         
-        ans.remove(ans.size()-1);
-        return false;
+         ans.add(from);
     }
     
     public List<String> findItinerary(List<List<String>> tickets) {
@@ -50,7 +43,8 @@ class Solution {
         }
         
         List<String> ans = new ArrayList<>();
-        dfs("JFK", 0, tickets.size(), ans);
+        dfs("JFK", ans);
+        Collections.reverse(ans);
         return ans;
     }
 }
