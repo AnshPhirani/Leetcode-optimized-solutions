@@ -1,36 +1,24 @@
 class Solution {
     
-    Integer[][] memo;
-    
-    private int helper(int i, int j, int[] nums1, int[] nums2){
-        if(i >= nums1.length || j >= nums2.length) return 0;
- 
-        if(memo[i][j] != null) return memo[i][j];
-        
-        
-        int ans = Integer.MIN_VALUE;
-        // map current numbers
-        ans = Math.max(ans, nums1[i]*nums2[j] + helper(i+1, j+1, nums1, nums2));
-        
-        // skip from nums1
-        ans = Math.max(ans, helper(i+1, j, nums1, nums2));
-        
-        // skip from nums2
-        ans = Math.max(ans, helper(i, j+1, nums1, nums2));
-        
-        return memo[i][j] = ans;
-        
-    }
-    
     public int maxDotProduct(int[] nums1, int[] nums2) {
-        this.memo = new Integer[501][501];
+        int n = nums1.length, m = nums2.length;
+        int[][] dp = new int[n+1][m+1];
+    
+        for(int[] d : dp) Arrays.fill(d, Integer.MIN_VALUE);
         
-        int ans = Integer.MIN_VALUE;
-        for(int i = 0; i < nums1.length; i++){
-            for(int j = 0; j < nums2.length; j++){
-                ans = Math.max(ans, nums1[i]*nums2[j] + helper(i+1, j+1, nums1, nums2));
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= m; j++){
+                int product = nums1[i-1]*nums2[j-1];
+                
+                // map both number
+                if(product < 0) dp[i][j] = product; 
+                else dp[i][j] = Math.max(product, product + dp[i-1][j-1]);
+                
+                // skip either from nums1 or nums2
+                dp[i][j] = Math.max(dp[i][j], Math.max(dp[i-1][j], dp[i][j-1]));
             }
         }
-        return ans;
+        
+        return dp[n][m];
     }
 }
