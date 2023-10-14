@@ -1,26 +1,24 @@
 class Solution {
-    
-    int[] cost, time;
-    int n;
     Integer[][] memo;
     
-    private int helper(int idx, int totalTime){
-        if(totalTime == n) return 0;
+    private int helper(int idx, int timeCollapsed, int n, int[] cost, int[] time){
+        if(timeCollapsed == n) return 0;
         if(idx == n) return 999999999;
         
-        if(memo[idx][totalTime] != null) return memo[idx][totalTime];
+        if(memo[idx][timeCollapsed] != null) return memo[idx][timeCollapsed];
         
-        int paid = helper(idx+1, Math.min(totalTime+1+time[idx], n)) + cost[idx];
-        int free = helper(idx+1, totalTime);
-        return memo[idx][totalTime] = Math.min(paid, free);
+        // paint current wall by paid painter
+        int paint = cost[idx] + helper(idx+1, Math.min(timeCollapsed+1+time[idx], n), n, cost, time);
+        
+        // skip current wall for free painter
+        int skip = helper(idx+1, timeCollapsed, n, cost, time);
+        
+        return memo[idx][timeCollapsed] = Math.min(paint, skip);
     }
-     
+    
     public int paintWalls(int[] cost, int[] time) {
-        this.cost = cost;
-        this.time = time;
-        this.n = cost.length;
-        this.memo = new Integer[n][n];
-        
-        return helper(0, 0);
+        int n = cost.length;
+        memo = new Integer[n][n];
+        return helper(0, 0, n, cost, time);        
     }
 }
