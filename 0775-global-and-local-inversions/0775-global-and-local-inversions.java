@@ -1,17 +1,11 @@
 class Solution {
     public boolean isIdealPermutation(int[] nums) {
         int n = nums.length;
-        
-        int[] suffixMin = new int[n];
-        suffixMin[n-1] = nums[n-1];
-        for(int i = n-2; i >= 0; i--){
-            suffixMin[i] = Math.min(suffixMin[i+1], nums[i]);
-        }
-        
+        int max = Integer.MIN_VALUE;
         for(int i = 0; i < n-2; i++){
-            if(suffixMin[i+2] < nums[i]) return false;
+            max = Math.max(max, nums[i]);
+            if(max > nums[i+2]) return false;
         }
-        
         return true;
     }
 }
