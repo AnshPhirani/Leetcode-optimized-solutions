@@ -1,29 +1,20 @@
 class Solution {
-    private static final int MOD = (int)1e9 + 7;
-    Integer[][] memo;
-    
-    private int helper(int idx, int steps, int arrLen){
-        if(steps == 0) return idx == 0 ? 1 : 0;
+
+    private int helper(int idx, int steps, int n, Integer[][] memo){        
+        if(idx == 0 && steps == 0) return 1;
+        if(idx < 0 || idx >= n || steps <= 0 || idx > steps) return 0;
         
-        if(memo[idx][steps] != null) return memo[idx][steps];
-            
-        int count = 0;
-        // Stay at same postion
-        count = (count + helper(idx, steps-1, arrLen))%MOD;
+        if(memo[idx][steps] != null) return memo[idx][steps]; 
         
-        // Move to left
-        if(idx-1 >= 0)
-            count = (count + helper(idx-1, steps-1, arrLen))%MOD;
+        int stay =  helper(idx, steps-1, n, memo);
+        int left =  helper(idx-1, steps-1, n, memo);
+        int right =  helper(idx+1, steps-1, n, memo);
         
-        // Move to right
-        if(idx+1 < arrLen)
-            count = (count + helper(idx+1, steps-1, arrLen))%MOD;
+        return memo[idx][steps] = ((stay + left)%1000000007 + right)%1000000007;
         
-        return memo[idx][steps] = count%MOD;
     }
     
     public int numWays(int steps, int arrLen) {
-        this.memo = new Integer[steps+1][steps+1];
-        return helper(0, steps, arrLen)%MOD;
+        return helper(0, steps, arrLen, new Integer[steps/2+1][steps+1]);
     }
 }
