@@ -22,6 +22,6 @@ class Solution {
             m--;
         }
         
-        return n < 0 && m < 0;     
+        return true;     
     }
 }
