@@ -1,47 +1,26 @@
 class Solution {
+    
     public String longestPalindrome(String s) {
-        // modifying the string so that it works for both odd and even lenght palindrome
-        StringBuilder sb = new StringBuilder();
-        sb.append('#');
-        for(char ch : s.toCharArray()){
-            sb.append(ch+"#");
-        }
+        int n = s.length();
+        int longestPalindromeLen = 0;
+        String longestPalindromeString = "";
         
-        String str = sb.toString();
-        int n = str.length();
-        
-        //stores longest palindrome center at i
-        int[] p = new int[n];
-        int center = 0, right = 0;
-        
-        int longestLen = 0, longestCenter = 0;
-        
-        for(int i = 0; i < n; i++){
-            
-            int mirror = 2*center - i;
-            if(right > i) p[i] = Math.min(p[mirror], right-i);
-            
-            int a = i-(p[i]+1);
-            int b = i+(p[i]+1);
-            while(a >= 0 && b < str.length() && str.charAt(a) == str.charAt(b)){
-                a--;
-                b++;
-                p[i]++;
+        for(int idx = 0; idx < 2*n; idx++){
+            int curPalindromeLen = 0;
+            int leftIdx = idx/2;
+            int rightIdx = (idx+1)/2;
+            while(leftIdx >= 0 && rightIdx < n && s.charAt(leftIdx) == s.charAt(rightIdx)){
+                curPalindromeLen += (leftIdx == rightIdx) ? 1 : 2;
+                leftIdx--;
+                rightIdx++;
             }
-            
-            if(p[i] > longestLen){
-                longestCenter = i;
-                longestLen = p[i];
-            }
-            
-            if(i+p[i] > right){
-                right = i+p[i];
-                center = i;
+            if(curPalindromeLen > longestPalindromeLen){
+                longestPalindromeLen = curPalindromeLen;
+                longestPalindromeString = s.substring(leftIdx+1, rightIdx);
             }
             
         }
         
-        return str.substring(longestCenter-longestLen, longestCenter + longestLen).replace("#", "");
-        
+        return longestPalindromeString;
     }
 }
