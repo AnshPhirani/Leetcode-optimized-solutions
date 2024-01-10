@@ -15,33 +15,49 @@
  */
 class Solution {
     
-    private TreeNode dfs(TreeNode root, int start, Map<TreeNode, TreeNode> parent){
+    private TreeNode buildParent(TreeNode root, Map<TreeNode, TreeNode> parent, int start){
         if(root == null) return null;
         if(root.left != null) parent.put(root.left, root);
         if(root.right != null) parent.put(root.right, root);
-        
-        TreeNode left = dfs(root.left, start, parent);
-        TreeNode right = dfs(root.right, start, parent);
+        TreeNode left = buildParent(root.left, parent, start);
+        TreeNode right = buildParent(root.right, parent, start);
         
         if(root.val == start) return root;
-        else if(left != null) return left;
-        else return right;
-    }
-    
-    private int maxHeight(TreeNode root, Map<TreeNode, TreeNode> parent, Set<TreeNode> visited){
-        if(root == null || visited.contains(root)) return 0;
-        visited.add(root);
-        
-        int leftHeight = maxHeight(root.left, parent, visited);
-        int rightHeight = maxHeight(root.right, parent, visited);
-        int topHeight = maxHeight(parent.getOrDefault(root, null), parent, visited);
-        return 1 + Math.max(topHeight, Math.max(leftHeight, rightHeight));
+        return (left != null) ? left : right;
     }
     
     public int amountOfTime(TreeNode root, int start) {
         Map<TreeNode, TreeNode> parent = new HashMap<>();
-        TreeNode newRoot = dfs(root, start, parent);
+        TreeNode startNode = buildParent(root, parent, start);
+        parent.put(root, null);
         
-        return maxHeight(newRoot, parent, new HashSet<>())-1;
+        // bfs
+        Queue<TreeNode> que = new LinkedList<>();
+        Set<TreeNode> visited = new HashSet<>();
+        visited.add(startNode);
+        que.add(startNode);
+        int level = 0;
+        while(!que.isEmpty()){
+            int size = que.size();
+            while(size-- > 0){
+                TreeNode cur = que.poll();
+                if(cur.left != null && !visited.contains(cur.left)){
+                    que.add(cur.left);
+                    visited.add(cur.left);
+                }
+                if(cur.right != null && !visited.contains(cur.right)){
+                    que.add(cur.right);
+                    visited.add(cur.right);
+                }
+                if(parent.getOrDefault(cur, null) != null && !visited.contains(parent.get(cur))){
+                    que.add(parent.get(cur));
+                    visited.add(parent.get(cur));
+                }
+            }
+            level++;
+        }
+        
+        return level-1;
+        
     }
 }
