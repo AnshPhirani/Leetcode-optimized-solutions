@@ -1,23 +1,36 @@
 class Solution {
     public int sumSubarrayMins(int[] arr) {
-        int n  = arr.length;
-        long sum = 0;
+        int n = arr.length;
         Stack<Integer> st = new Stack<>();
-        st.push(-1);
         
-        for(int idx = 0; idx <= n; idx++){
-            int curVal = idx < n? arr[idx] : 0;
-            while(st.peek() != -1 && curVal < arr[st.peek()]){
-                int middleIdx = st.pop();
-                int leftIdx = st.peek();
-                int rightIdx = idx;
-                sum += 1l*(rightIdx-middleIdx)*(middleIdx-leftIdx)*arr[middleIdx];
-                sum %= (int)1e9+7;
+        int[] rightSmaller = new int[n];
+        Arrays.fill(rightSmaller, n-1);
+        for(int i = 0; i < n; i++){
+            while(!st.isEmpty() && arr[st.peek()] > arr[i]){
+                rightSmaller[st.pop()] = i-1;
             }
-            st.push(idx);
+            st.push(i);
         }
         
-        return (int)sum;
+        st.clear();
+        int[] leftSmaller = new int[n];
+        Arrays.fill(leftSmaller, 0);
+        for(int i = n-1; i >= 0; i--){
+            while(!st.isEmpty() && arr[st.peek()] >= arr[i]){
+                leftSmaller[st.pop()] = i+1;
+            }
+            st.push(i);
+        }
         
+//         System.out.println(Arrays.toString(leftSmaller));
+//         System.out.println(Arrays.toString(rightSmaller));
+        
+        long ans = 0;
+        int MOD = (int)1e9 + 7;
+        for(int i = 0; i < n; i++){
+            ans += 1l * arr[i] * (i-leftSmaller[i]+1)*(rightSmaller[i]-i+1);
+            ans %= MOD;
+        }
+        return (int)(ans);
     }
 }
