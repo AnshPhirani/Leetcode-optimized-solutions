@@ -1,17 +1,36 @@
 class Solution {
+    
+    private int bSearch(int[] arr, int target){
+        int l = 0, h = arr.length-1;
+        int ansIdx = 0;
+        while(l <= h){
+            int mid = (l+h)/2;
+            if(arr[mid] < target){
+                ansIdx = mid;
+                l = mid+1;
+            }
+            else{
+                h = mid-1;
+            }
+        }
+        return ansIdx;
+    }
+    
+    
     public int lengthOfLIS(int[] nums) {
         int n = nums.length;
-        int[] lis = new int[n];
-        int ans = 1;
-        for(int i = 0; i < n; i++){
-            lis[i] = 1;
-            for(int j = 0; j < i; j++){
-                if(nums[i] > nums[j] && lis[j]+1 > lis[i]){
-                    lis[i] = lis[j]+1;
-                }
-            }
-            ans = Math.max(ans, lis[i]);
+        int[] dp = new int[n+1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = Integer.MIN_VALUE;
+        
+        int LIS = 0;
+        
+        for(int i = 1; i <= n; i++){
+            int prev = bSearch(dp, nums[i-1]);
+            dp[prev+1] = nums[i-1];
+            LIS = Math.max(LIS, prev+1);
         }
-        return ans;
+        
+        return LIS;
     }
 }
