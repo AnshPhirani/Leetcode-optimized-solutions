@@ -7,17 +7,14 @@ class Solution {
         StringBuilder res = new StringBuilder();
         String[] words = sentence.split(" ");
         
-        outer:
+        
         for(String word : words){
             String temp = "";
             for(char ch : word.toCharArray()){
                 temp += ch;
-                if(set.contains(temp)){
-                    res.append(temp + " ");
-                    continue outer;
-                }
+                if(set.contains(temp)) break;
             }
-            res.append(word + " ");
+            res.append(temp + " ");
         }
         
         return res.substring(0, res.length()-1).toString();
