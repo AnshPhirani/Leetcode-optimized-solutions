@@ -12,11 +12,6 @@ class Solution {
         }
         
         ans = Math.min(ans, oneCount-curOnes);
-        while(end < n){
-            if(nums[start++] == 1) curOnes--;
-            if(nums[end++] == 1) curOnes++;
-            ans = Math.min(ans, oneCount - curOnes);
-        }
         
         while(start < n){
             end %= n;
