@@ -20,9 +20,7 @@ class Solution {
             end2--;
         }
         
-        if(end >= start) return false;
-        
-        return true;
+       return end < start;
         
     }
 }
