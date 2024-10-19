@@ -6,6 +6,8 @@ class Solution {
             return OR == maxOR ? 1 : 0;
         }
         
+        if(OR == maxOR) return 1<<(nums.length-i);
+        
         return helper(i+1, OR | nums[i], nums) + helper(i+1, OR, nums);
     }
     
