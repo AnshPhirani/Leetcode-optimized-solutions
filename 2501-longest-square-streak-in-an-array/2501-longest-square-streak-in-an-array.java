@@ -3,14 +3,13 @@ class Solution {
         Set<Long> set = new HashSet<>();
         for(long num : nums) set.add(num);
         
-        Arrays.sort(nums);
         int maxStreak = -1;
         for(long num : nums){
             int curStreak = 1;
             while(set.contains(num*num)){
-                set.remove(num*num);
                 num = num*num;
                 curStreak++;
+                if(num > 1e5) break;
             }
             if(curStreak >= 2) maxStreak = Math.max(maxStreak, curStreak);
         }
