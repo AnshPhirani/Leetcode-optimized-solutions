@@ -13,7 +13,7 @@ class Solution {
             int l = 0, r = n-1;
             int maximumBeauty = 0;
             while(l <= r){
-                int mid = (l+r)/2;
+                int mid = l + (r-l)/2;
                 if(items[mid][0] > target){
                     r = mid-1;
                 }
