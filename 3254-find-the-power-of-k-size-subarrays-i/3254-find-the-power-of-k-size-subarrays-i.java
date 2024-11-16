@@ -5,28 +5,15 @@ class Solution {
         
         int[] ans = new int[n-k+1];
         
-        Deque<Integer> deque = new ArrayDeque<>();
-        
-        int start = 0, end = 0;
-        deque.add(end); 
-        while(end < n-1){
-            if(nums[end+1] == nums[end]+1){
-                deque.add(end+1);
-            }
-            else{
-                deque.clear();
-                deque.add(end+1);
-            }
-            end++;
-            
-            if(deque.peekFirst() <= end-k) deque.removeFirst();
-            if(end >= k-1){
-                ans[end-k+1] = deque.size() == k ? nums[end] : -1;
+        int consecCount = 1;
+        for(int i = 1; i < n; i++){
+            if(nums[i] == nums[i-1] + 1) consecCount++;
+            else consecCount = 1;
+            if(i >= k-1){
+                ans[i-k+1] = consecCount >= k ? nums[i] : -1;
             }
         }
         
-        
         return ans;
-        
     }
 }
