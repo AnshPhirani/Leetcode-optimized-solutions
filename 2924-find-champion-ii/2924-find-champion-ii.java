@@ -12,10 +12,11 @@ class Solution {
                 zeroInDegreeCount++;
                 champion = i;
             }
+            if(zeroInDegreeCount == 2) return -1;
         }
         
         
-        return zeroInDegreeCount == 1 ? champion : -1;
+        return champion;
         
     }
 }
