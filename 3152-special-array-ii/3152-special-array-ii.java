@@ -10,20 +10,13 @@ class Solution {
                 prefixParityCount[i+1] = prefixParityCount[i];
         }
         
-        // System.out.println(Arrays.toString(prefixParityCount));
+ 
         
         int k = 0;
         boolean[] ans = new boolean[queries.length];
         for(int[] query : queries){
-            int left = query[0], right = query[1];
-            if(left == right) {
-                ans[k++] = true;
-                continue;
-            }
-            
-            int parityCount = prefixParityCount[right] - prefixParityCount[left];
-            if(parityCount == 0) ans[k++] = true;
-            else ans[k++] = false;
+            int left = query[0], right = query[1];            
+            ans[k++] = prefixParityCount[right] - prefixParityCount[left] == 0;
         }
         
         return ans;
