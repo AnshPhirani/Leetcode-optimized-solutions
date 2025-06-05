@@ -40,5 +40,10 @@ Collection of LeetCode questions to ace the coding interview!
 ## String
 |  |
 | ------- |
+| [1058-lexicographically-smallest-equivalent-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+## Union Find
+|  |
+| ------- |
+| [1058-lexicographically-smallest-equivalent-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
 <!---LeetCode Topics End-->
