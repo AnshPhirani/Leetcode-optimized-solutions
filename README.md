@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 ## Graph
 |  |
 | ------- |
@@ -51,9 +52,18 @@ Collection of LeetCode questions to ace the coding interview!
 ## Hash Table
 |  |
 | ------- |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 ## Stack
 |  |
 | ------- |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+## Tree
+|  |
+| ------- |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 <!---LeetCode Topics End-->
