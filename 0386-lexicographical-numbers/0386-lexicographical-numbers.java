@@ -1,17 +1,18 @@
 class Solution {
-    public List<Integer> lexicalOrder(int n) {
-        Stack<Integer> st = new Stack<>();
-        for(int i = 9; i >= 1; i--) st.push(i);
-        
-        List<Integer> res = new ArrayList<>();
-        while(!st.isEmpty()){
-            int cur = st.pop();
-            if(cur <= n) res.add(cur);
-            for(int i = 9; i >= 0; i--){
-                int next = cur*10 + i;
-                if(next <= n) st.push(next);
-            }
+
+    private void generate(int cur, int n, List<Integer> numbers){
+        if(cur > n) return; 
+        numbers.add(cur);
+        for(int i = 0; i <= 9; i++){
+            generate(cur*10 + i, n, numbers);
         }
-        return res;
+    }
+    
+    public List<Integer> lexicalOrder(int n) {
+        List<Integer> numbers = new ArrayList<>();
+        for(int i = 1; i <= 9; i++){
+            generate(i, n, numbers);
+        }
+        return numbers;
     }
 }
