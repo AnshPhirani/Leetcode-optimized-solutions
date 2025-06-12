@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0135-candy](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0135-candy) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
+| [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 ## Greedy
 |  |
 | ------- |
