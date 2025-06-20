@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [3201-distribute-candies-among-children-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3201-distribute-candies-among-children-ii) |
+| [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Combinatorics
 |  |
 | ------- |
@@ -56,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Union Find
 |  |
 | ------- |
@@ -66,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
+| [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Stack
 |  |
 | ------- |
@@ -97,4 +100,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+## Counting
+|  |
+| ------- |
+| [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 <!---LeetCode Topics End-->
