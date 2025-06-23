@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
+| [2202-sum-of-k-mirror-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2202-sum-of-k-mirror-numbers) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [3201-distribute-candies-among-children-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3201-distribute-candies-among-children-ii) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -17,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Enumeration
 |  |
 | ------- |
+| [2202-sum-of-k-mirror-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2202-sum-of-k-mirror-numbers) |
 | [3201-distribute-candies-among-children-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3201-distribute-candies-among-children-ii) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Array
