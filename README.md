@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0135-candy](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0135-candy) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
+| [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
@@ -73,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+| [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -93,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 ## Trie
 |  |
@@ -106,6 +109,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Sorting
 |  |
 | ------- |
+| [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 ## Counting
 |  |
