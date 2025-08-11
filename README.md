@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
+| [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
@@ -169,8 +170,13 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0231-power-of-two) |
+| [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
 ## Recursion
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0231-power-of-two) |
+## Prefix Sum
+|  |
+| ------- |
+| [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
 <!---LeetCode Topics End-->
