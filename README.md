@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Array
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [0135-candy](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0135-candy) |
 | [0594-longest-harmonious-subsequence](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
@@ -94,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Hash Table
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [0594-longest-harmonious-subsequence](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
@@ -188,5 +190,6 @@ Collection of LeetCode questions to ace the coding interview!
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 <!---LeetCode Topics End-->
