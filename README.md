@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2202-sum-of-k-mirror-numbers) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [3201-distribute-candies-among-children-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3201-distribute-candies-among-children-ii) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -40,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
@@ -58,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
@@ -105,6 +108,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1813-maximum-erasure-value](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1813-maximum-erasure-value) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
