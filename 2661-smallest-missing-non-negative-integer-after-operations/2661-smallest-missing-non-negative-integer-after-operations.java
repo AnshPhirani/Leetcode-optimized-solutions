@@ -7,7 +7,7 @@ class Solution {
             map.put(num, map.getOrDefault(num, 0)+1);
         }
 
-        for(int mex = 0; mex <= nums.length; mex++){
+        for(int mex = 0; mex < nums.length; mex++){
             if(map.containsKey(mex)){
                 map.put(mex, map.get(mex)-1);
                 if(map.get(mex) == 0) map.remove(mex);
@@ -23,6 +23,6 @@ class Solution {
             }
         }
 
-        return -1;
+        return nums.length;
     }
 }
