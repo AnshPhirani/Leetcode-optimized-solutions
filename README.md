@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [3201-distribute-candies-among-children-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3201-distribute-candies-among-children-ii) |
+| [3676-smallest-number-with-all-set-bits](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Combinatorics
 |  |
@@ -193,6 +194,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0231-power-of-two](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0231-power-of-two) |
 | [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
+| [3676-smallest-number-with-all-set-bits](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Recursion
 |  |
 | ------- |
