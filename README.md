@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1710-maximum-units-on-a-truck](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1710-maximum-units-on-a-truck) |
 | [1813-maximum-erasure-value](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1813-maximum-erasure-value) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2320-find-all-k-distant-indices-in-an-array) |
@@ -179,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
@@ -212,6 +214,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Prefix Sum
 |  |
 | ------- |
+| [2100-find-good-days-to-rob-the-bank](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
 ## Matrix
 |  |
