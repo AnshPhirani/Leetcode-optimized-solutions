@@ -1,20 +1,15 @@
 class Solution {
     public int minDeletionSize(String[] strs) {
-        int n = strs.length;
-        int len = strs[0].length();
-        int count = 0;
-        for(int j = 0; j < len; j++){
-            char prev = strs[0].charAt(j);
-            for(int i = 1; i < n; i++){
-                char curr = strs[i].charAt(j);
-                if(curr < prev){
-                    count++;
+        int deletionCount = 0;
+
+        for(int j = 0; j < strs[0].length(); j++){
+            for(int i = 1; i < strs.length; i++){
+                if(strs[i-1].charAt(j) > strs[i].charAt(j)){
+                    deletionCount++;
                     break;
                 }
-                prev = curr;
             }
         }
-        
-        return count;
+        return deletionCount;
     }
 }
