@@ -46,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
@@ -123,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1813-maximum-erasure-value](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1813-maximum-erasure-value) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
+| [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
@@ -150,6 +152,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
+| [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 ## Trie
 |  |
@@ -171,6 +174,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
@@ -186,6 +190,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2260-divide-a-string-into-groups-of-size-k) |
+| [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 ## Dynamic Programming
 |  |
 | ------- |
