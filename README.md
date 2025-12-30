@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0231-power-of-two](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0326-power-of-three) |
+| [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2202-sum-of-k-mirror-numbers) |
@@ -33,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0135-candy](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0135-candy) |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
 | [0594-longest-harmonious-subsequence](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0594-longest-harmonious-subsequence) |
+| [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [0944-delete-columns-to-make-sorted](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0944-delete-columns-to-make-sorted) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
@@ -122,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [0594-longest-harmonious-subsequence](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0756-pyramid-transition-matrix](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0756-pyramid-transition-matrix) |
+| [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1813-maximum-erasure-value](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1813-maximum-erasure-value) |
@@ -243,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
+| [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 ## Backtracking
 |  |
