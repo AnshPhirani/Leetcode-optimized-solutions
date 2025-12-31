@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1710-maximum-units-on-a-truck](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1710-maximum-units-on-a-truck) |
 | [1813-maximum-erasure-value](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1813-maximum-erasure-value) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2100-find-good-days-to-rob-the-bank](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
@@ -84,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 ## Graph
 |  |
 | ------- |
@@ -118,6 +120,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 ## Hash Table
 |  |
 | ------- |
@@ -151,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0386-lexicographical-numbers) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -167,6 +171,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Search
 |  |
 | ------- |
+| [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
@@ -247,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
+| [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 ## Backtracking
 |  |
