@@ -207,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
+| [1411-number-of-ways-to-paint-n-3-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2100-find-good-days-to-rob-the-bank](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2100-find-good-days-to-rob-the-bank) |
