@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0231-power-of-two](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0326-power-of-three) |
 | [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
+| [1390-four-divisors](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1390-four-divisors) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2202-sum-of-k-mirror-numbers) |
@@ -38,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0594-longest-harmonious-subsequence](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [0944-delete-columns-to-make-sorted](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0944-delete-columns-to-make-sorted) |
+| [1390-four-divisors](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1390-four-divisors) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1510-find-lucky-integer-in-an-array) |
