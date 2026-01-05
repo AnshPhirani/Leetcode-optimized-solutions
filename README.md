@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1710-maximum-units-on-a-truck](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1710-maximum-units-on-a-truck) |
 | [1813-maximum-erasure-value](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1813-maximum-erasure-value) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
+| [1975-maximum-matrix-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1975-maximum-matrix-sum) |
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2100-find-good-days-to-rob-the-bank](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2100-find-good-days-to-rob-the-bank) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
@@ -74,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [1710-maximum-units-on-a-truck](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1710-maximum-units-on-a-truck) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1818-maximum-score-from-removing-substrings) |
+| [1975-maximum-matrix-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1975-maximum-matrix-sum) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
@@ -258,6 +260,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
+| [1975-maximum-matrix-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1975-maximum-matrix-sum) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 ## Backtracking
 |  |
