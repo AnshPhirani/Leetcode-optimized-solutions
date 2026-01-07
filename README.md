@@ -156,12 +156,14 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0386-lexicographical-numbers) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 ## Heap (Priority Queue)
@@ -273,4 +275,5 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 <!---LeetCode Topics End-->
