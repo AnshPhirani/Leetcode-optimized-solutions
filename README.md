@@ -110,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0756-pyramid-transition-matrix](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0756-pyramid-transition-matrix) |
 | [0944-delete-columns-to-make-sorted](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0944-delete-columns-to-make-sorted) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
@@ -221,6 +222,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
