@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
 | [0066-plus-one](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0066-plus-one) |
+| [0085-maximal-rectangle](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0085-maximal-rectangle) |
 | [0135-candy](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0135-candy) |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
 | [0594-longest-harmonious-subsequence](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0594-longest-harmonious-subsequence) |
@@ -153,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Stack
 |  |
 | ------- |
+| [0085-maximal-rectangle](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0085-maximal-rectangle) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
@@ -221,6 +223,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Dynamic Programming
 |  |
 | ------- |
+| [0085-maximal-rectangle](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0085-maximal-rectangle) |
 | [0474-ones-and-zeroes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0474-ones-and-zeroes) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
@@ -271,6 +274,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0036-valid-sudoku) |
+| [0085-maximal-rectangle](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0085-maximal-rectangle) |
 | [0840-magic-squares-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0840-magic-squares-in-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1975-maximum-matrix-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1975-maximum-matrix-sum) |
@@ -285,4 +289,8 @@ Collection of LeetCode questions to ace the coding interview!
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0085-maximal-rectangle](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0085-maximal-rectangle) |
 <!---LeetCode Topics End-->
