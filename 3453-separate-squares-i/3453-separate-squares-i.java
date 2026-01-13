@@ -13,6 +13,7 @@ class Solution {
         while(Math.abs(high - low) > 0.00001){
             double mid = (low+high)/2;
             if(isPossible(mid, squares)){
+                ans = mid;
                 high = mid;
             }
             else{
@@ -20,7 +21,7 @@ class Solution {
             }
         }
 
-        return high;
+        return ans;
     }
 
     private boolean isPossible(double y, int[][] squares){
@@ -29,10 +30,11 @@ class Solution {
         for(int[] square : squares){
             totalArea += (double)square[2]*square[2];
             double startY = square[1];
-            if(startY < y) aboveLineArea += Math.min(y-startY, square[2])*square[2];
+            double endY = square[1] + square[2];
+            double lowerY = Math.max(startY, y);
+            if(endY > lowerY) aboveLineArea += (endY-lowerY)*square[2];
         }
-
-        return aboveLineArea >= totalArea/2;
+        return aboveLineArea <= totalArea/2;
     }
 
 }
