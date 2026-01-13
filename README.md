@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3453-separate-squares-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3453-separate-squares-i) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -196,6 +197,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2054-two-best-non-overlapping-events](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3453-separate-squares-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3453-separate-squares-i) |
 ## Sorting
 |  |
 | ------- |
