@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2202-sum-of-k-mirror-numbers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2202-sum-of-k-mirror-numbers) |
+| [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3201-distribute-candies-among-children-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3201-distribute-candies-among-children-ii) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Array
@@ -64,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2943-maximize-area-of-square-hole-in-grid) |
+| [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3074-apple-redistribution-into-boxes) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3453-separate-squares-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3453-separate-squares-i) |
@@ -152,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
+| [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
