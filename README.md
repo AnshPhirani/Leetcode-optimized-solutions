@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3074-apple-redistribution-into-boxes) |
+| [3315-construct-the-minimum-bitwise-array-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3453-separate-squares-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3453-separate-squares-i) |
 | [3454-separate-squares-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3454-separate-squares-ii) |
@@ -272,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0231-power-of-two](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0231-power-of-two) |
 | [0756-pyramid-transition-matrix](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/0756-pyramid-transition-matrix) |
 | [2529-range-product-queries-of-powers](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2529-range-product-queries-of-powers) |
+| [3315-construct-the-minimum-bitwise-array-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3315-construct-the-minimum-bitwise-array-ii) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Recursion
 |  |
