@@ -77,6 +77,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
@@ -162,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Stack
 |  |
@@ -194,6 +196,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Trie
 |  |
 | ------- |
@@ -236,6 +239,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2402-meeting-rooms-iii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/2402-meeting-rooms-iii) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -267,6 +271,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -325,4 +330,12 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [3454-separate-squares-ii](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3454-separate-squares-ii) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
+## Ordered Set
+|  |
+| ------- |
+| [3507-minimum-pair-removal-to-sort-array-i](https://github.com/AnshPhirani/Leetcode-optimized-solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 <!---LeetCode Topics End-->
